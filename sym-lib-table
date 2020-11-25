@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name EC21)(type Legacy)(uri ${KIPRJMOD}/EC21.lib)(options "")(descr ""))
+)

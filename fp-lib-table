@@ -1,0 +1,6 @@
+(fp_lib_table
+  (lib (name iptracker)(type KiCad)(uri E:/projects/iptracker)(options "")(descr ""))
+  (lib (name w_conn_rf)(type KiCad)(uri ${KIPRJMOD}/mod_conn_rf/w_conn_rf.pretty)(options "")(descr ""))
+  (lib (name microsd)(type KiCad)(uri ${KIPRJMOD}/microsd)(options "")(descr ""))
+  (lib (name SIMCARD_SUNROM)(type KiCad)(uri ${KIPRJMOD}/SIMCARD_SUNROM.pretty)(options "")(descr ""))
+)

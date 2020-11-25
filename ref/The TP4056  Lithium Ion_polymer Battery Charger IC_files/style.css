@@ -1,0 +1,3701 @@
+/* ------ Section 1 - Global Body, Font and Link Settings ------ */
+
+body {
+background: #fff;
+margin: 0;
+padding: 0;
+font-family: Verdana, Geneva, sans-serif;
+color: #000;
+font-size: 75%;
+line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+margin: 1em 0 0.5em;
+}
+
+h1 {
+font-size: 200%;
+}
+
+h2 {
+font-size: 150%;
+}
+
+h3 {
+font-size: 125%;
+}
+
+h4 {
+font-size: 100%;
+}
+
+blockquote {
+font-size: 115%;
+font-style: italic;
+margin: 12px 50px;
+}
+
+code {
+color: navy;
+}
+
+img {
+border: 0;
+}
+
+p {
+margin: 1em 0;
+}
+
+/* -- General Link Styling -- */
+
+/* default link colors (just in case) */
+
+a {
+color: #0000EE;
+}
+
+a:visited {
+color: #55199A;
+}
+
+a:active {
+color: #EE0000;
+}
+a img {
+border: 0;
+}
+
+hr {
+border-style:solid;
+width: 75%;
+}
+
+/* ------ Section 2 - Global Page Structure ------- */
+
+#PageWrapper {
+width: 1000px;
+margin: 0 auto;
+}
+
+#Header {
+width: 1000px;
+}
+
+#Header .Liner {
+padding: 1px 0;
+position: relative;
+min-height: 198px;
+_height: 198px;
+}
+
+#ContentWrapper {
+float: left;
+width: 600px;
+padding-left: 200px;
+padding-right: 200px;
+}
+
+#ContentColumn {
+width: 600px;
+}
+
+#NavColumn {
+float: left;
+width: 200px;
+margin-left: -1000px;
+}
+
+#ExtraColumn {
+float: left;
+width: 200px;
+margin-left: -200px;
+}
+
+#Footer {
+clear: both;
+width: 1000px;
+}
+
+.Liner {
+padding: 10px;
+*zoom: 1;
+}
+
+/* ------ Section 3 - Page Structure Details ------ */
+
+#Header .Liner {
+background: url(../image-files/header-image.gif) no-repeat;
+}
+
+#Footer .Liner {
+text-align: center;
+}
+
+/* ------ Section 4 - Left Column Navigation ------ */
+
+/* -- Nav Headers -- */
+#PageWrapper .Navigation h3 { /* Nav Headers rules to prevent sitedesigner h3 inheritance */
+font-family: Verdana, Geneva, sans-serif;
+font-size: 15px;
+font-weight: bold;
+color: #000;
+text-align: left;
+background-color: transparent;
+border: 0;
+margin: 15px 0 7.5px;
+}
+
+/* -- Nav List -- */
+
+.Navigation ul {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+.Navigation li {
+padding: 0;
+margin: 0 0 2px;
+}
+
+#PageWrapper div.Navigation a,
+.Navigation a {
+text-decoration: none;
+padding: 5px;
+display: block;
+_zoom: 1;
+}
+
+table#PageWrapper .Navigation {
+min-width: 180px;
+_width: 180px;
+}
+
+/* ------ Section 5 - Additional Navigation ------ */
+
+/* -- Thumbnail-with-Caption Navigation -- */
+
+.ThumbnailLink {
+text-align: center;
+}
+
+/* -- Horizontal Text NavBar -- */
+
+#Header .ExtraNav {
+position: absolute;
+top: 0;
+right: 0;
+text-align: right;
+}
+
+#Footer .ExtraNav {
+margin: 12px auto;
+}
+
+.ExtraNav ul {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+.ExtraNav ul li {
+display: inline;
+}
+
+/* ------ Section 6 - Boxes ------ */
+
+/* -- Callout Box -- */
+
+#PageWrapper .CalloutBox p { /* SiteDesigner inheritance prevention */
+font-family: Verdana, Geneva, sans-serif;
+font-size: 11px;
+font-variant: normal;
+color: #000000;
+}
+
+.CalloutBox {
+background: #CCCCCC;
+margin: 1em auto;
+padding: 0.3em;
+width: 85%;
+}
+
+.CalloutBox p {
+font-size: 95%;
+margin: 0;
+padding: 0.5em;
+}
+
+/* -- Reminder Box -- */
+
+#PageWrapper .ReminderBox h4 { /* SiteDesigner inheritance prevention */
+font-family: Verdana, Geneva, sans-serif;
+font-size: 12px;
+font-weight: bold;
+font-style: normal;
+font-variant: normal;
+color: #000000;
+text-align: center;
+border: 0;
+margin: 0;
+background: none;
+}
+
+#PageWrapper .ReminderBox p { /* SiteDesigner inheritance prevention */
+font-family: Verdana, Geneva, sans-serif;
+font-size: 12px;
+font-variant: normal;
+color: #000000;
+}
+
+.ReminderBox {
+background: #ccc;
+width: 35%;
+margin: 1em 0 1em 1em;
+padding: 0.3em;
+float: right;
+}
+
+.ReminderBox h4 {
+margin: 0;
+padding: 0.5em;
+text-align: center;
+}
+
+.ReminderBox p {
+margin: 0;
+padding: 0.5em;
+}
+
+/* -- AdSense Boxes -- */
+
+.AdSenseBoxLeft {
+margin: 0 18px 12px;
+float: left;
+}
+
+.AdSenseBoxRight {
+margin: 0 18px 12px;
+float: right;
+}
+
+.AdSenseResponsiveBox {
+    width: 50%;
+}
+
+@media only screen and (max-width: 447px) {
+    .AdSenseResponsiveBox {
+        margin: 0;
+        float: none;
+        width: 100%;
+    }
+}
+
+.AdSenseBoxCenter {
+text-align: center;
+clear: both;
+}
+
+.AdSenseBoxCenter468 {
+width: 468px;
+margin: 0 auto 12px;
+clear: both;
+}
+
+.AdSenseBoxExtraColumn {
+padding: 0;
+margin: 0 auto 12px;
+clear: both;
+}
+
+/* -- Return To Nav Box -- */
+
+.ReturnToNavBox {
+margin: 40px auto 0;
+padding: 0 2px;
+}
+
+/* -- FBI -- */
+
+.formBarGraphBar {
+border: 0;
+background-color: #009;
+}
+
+/* -- What's New Block -- */
+
+#PageWrapper .WhatsNew h2 { /* SiteDesigner inheritance prevention */
+font-family: Verdana, Geneva, sans-serif;
+font-weight: bold;
+font-style: normal;
+font-variant: normal;
+color: #000000;
+border: 0;
+background: #CCCCCC;
+}
+
+#PageWrapper .WhatsNew h3 { /* SiteDesigner inheritance prevention */
+font-family: Verdana, Geneva, sans-serif;
+font-size: 15px;
+font-weight: bold;
+font-style: normal;
+font-variant: normal;
+text-align: left;
+border: 0;
+margin: 15px 0 0 0;
+padding: 0;
+background: none;
+}
+
+.WhatsNew {
+box-sizing: border-box;
+border: 1px solid #ccc;
+margin: 1em 0;
+position: relative;
+}
+
+#PageWrapper .WhatsNew img {
+border: 0;
+max-width: 100%;
+height: auto;
+width: auto\9; /* ie8 */
+}
+
+#PageWrapper .WhatsNew h2 {
+margin: 0;
+padding: 0.3em 24px 0.3em 4px;
+_padding-right: 4px;
+background: #ccc;
+line-height: 1.2;
+font-size: 125%;
+text-align: center;
+}
+
+#PageWrapper .WhatsNew ol,
+#PageWrapper .WhatsNew ul,
+#PageWrapper .WhatsNew li {
+margin: 0;
+padding: 0;
+list-style: none;
+*zoom: 1;
+background: transparent;
+}
+
+#PageWrapper .WhatsNew ol {
+margin: 0 10px;
+overflow: hidden;
+}
+
+#PageWrapper .WhatsNew ol li {
+display: block;
+padding-bottom: 1px;
+border-top: 1px solid #ccc;
+margin-top: -1px;
+}
+
+#PageWrapper .WhatsNew h3 {
+font-size: 125%;
+line-height: 1.2;
+margin-bottom: 0;
+}
+
+.WhatsNew-time {
+font-size: 75%;
+color: #888;
+margin-top: 0.5em;
+}
+
+.WhatsNew-more {
+text-align: right;
+margin: 1em 0;
+}
+
+.WhatsNew-subscribe {
+position: absolute;
+z-index: 2;
+top: 0;
+right: 0;
+text-align: right;
+_display: none;
+}
+
+.WhatsNew-icon {
+padding: 4px 4px 2px;
+}
+
+#PageWrapper .WhatsNew-subscribe ul {
+display: none;
+padding: 2px 4px;
+background: #ccc;
+}
+
+#PageWrapper .WhatsNew-subscribe ul li {
+display: block;
+background-image: none;
+}
+
+#PageWrapper .WhatsNew-subscribe:hover ul {
+display: block;
+}
+
+#PageWrapper .WhatsNew-subscribe ul img {
+display: block;
+padding: 2px 0;
+}
+
+.mobile #PageWrapper .WhatsNew h2 {
+padding-right: 4px;
+}
+
+.mobile .WhatsNew-subscribe {
+position: static;
+}
+
+.mobile .WhatsNew-icon {
+display: none;
+}
+
+.mobile #PageWrapper .WhatsNew-subscribe ul {
+display: block;
+text-align: center;
+}
+
+.mobile #PageWrapper .WhatsNew-subscribe ul img {
+display: inline-block;
+}
+
+.WhatsNewLeft {
+float: left;
+margin-right: 0.5em;
+}
+
+.WhatsNewRight {
+float: right;
+margin-left: 0.5em;
+}
+
+.WhatsNewCenter {
+margin-left: auto;
+margin-right: auto;
+}
+
+/* -- Blog -- */
+
+.blogItItem {
+margin: 18px 0;
+border-bottom: 1px solid #ccc;
+}
+
+/* -- RSS Box -- */
+
+.RSSbox {
+padding: 0.2em 0 1em;
+font-weight: bold;
+text-align: center;
+margin-top: 8px;
+margin-bottom: 8px;
+}
+
+.RSSbox img {
+padding: 1px 0;
+}
+
+.RSSbox ul,
+.RSSbox ul li {
+margin: 0;
+padding: 0;
+}
+
+.RSSbox ul {
+list-style-type: none;
+clear: both;
+}
+
+.RSSbox ul li {
+text-align: center;
+}
+
+.RSSbox ul li img {
+border: 0;
+padding: 1px 0;
+}
+
+/* BEGIN =Text\Image Block - base */
+.text_image_block {
+    margin: 0.5em 0 0 0;
+}
+
+.text_image_not_floated.text_image_left .ImageBlock img {
+    float: left;
+}
+
+.text_image_not_floated.text_image_right .ImageBlock img {
+    float: right;
+}
+
+.text_image_not_floated.text_image_center .ImageBlock {
+    text-align: center;
+}
+
+#PageWrapper .text_image_floated .ImageBlock {
+    margin: 0.3em 0 0 0;
+}
+
+#PageWrapper .text_image_floated.text_image_left .ImageBlock {
+    float: left;
+    margin-right: 10px;
+}
+
+#PageWrapper .text_image_floated.text_image_right .ImageBlock {
+    float: right;
+    margin-left: 10px;
+}
+
+.text_image_top_cleared,
+.text_image_both_cleared {
+    clear: both;
+}
+
+.text_image_bottom_cleared p:last-of-type:after,
+.text_image_both_cleared p:last-of-type:after {
+    content: "";
+    clear: both;
+    display: block;
+    width: 100%;
+}
+/* END =Text\Image Block - base */
+
+/* BEGIN =Text\Image Block - MobilizeIt */
+html.mobile #PageWrapper .text_image_floated.text_image_left .ImageBlock,
+html.mobile #PageWrapper .text_image_floated.text_image_right .ImageBlock {
+    float: none;
+    margin: 0 0 15px 0;
+}
+
+html.mobile div#PageWrapper .text_image_floated .ImageBlock {
+    max-width: 100%;
+}
+/* END =Text\Image Block - MobilizeIt */
+
+/* -- Ezine2 Box -- */
+
+.Ezine2 {
+    margin: 1em 0;
+    padding: 0.5em;
+    border: 1px solid #eee;
+}
+
+.EzineRow {
+    padding: 0.5em 0;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.EzineVertical label {
+    display: block;
+}
+
+.EzineHorizontal .EzineRow,
+.EzineHorizontal label {
+    display: inline-block;
+}
+
+.Ezine2 label,
+.Ezine2 input[type="text"],
+.Ezine2 input[type="email"],
+.EzineButton {
+    vertical-align: middle;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.EzineLeft {
+    text-align: left;
+}
+
+.EzineCenter {
+    text-align: center;
+}
+
+.EzineRight {
+    text-align: right;
+}
+
+/* -- Ezine Box -- */
+
+.Ezine {
+border: 1px solid #666;
+background: #fff;
+padding: 4px;
+margin-top: 8px;
+margin-bottom: 8px;
+}
+
+.Ezine table {
+width: 100%;
+}
+
+.Ezine td {
+width: 50%;
+text-align: center;
+vertical-align: top;
+}
+
+.Ezine .EzineInputAbove {
+width: 100%;
+}
+
+.EzineInput input {
+width: 90%;
+max-width: 350px;
+}
+
+td.EzineLabel {
+text-align: right;
+font-weight: bold;
+}
+
+td.EzineLabelAbove {
+text-align: center;
+}
+
+.EzineDescription {
+text-align: center;
+}
+
+.EzineDescription small {
+font-size: 90%;
+}
+
+/* ------ Section 7 - Frequently Used Styles ------ */
+
+.Clear {
+clear: both;
+}
+
+a .Caption {
+color: inherit;
+}
+
+.CaptionLeft {
+text-align: left !important;
+}
+
+.CaptionCenter {
+margin-left: auto;
+margin-right: auto;
+text-align: center !important;
+}
+
+.CaptionRight {
+text-align: right !important;
+}
+
+.Caption {
+font-size: 85%;
+font-weight: bold;
+display: block;
+margin-bottom: 10px;
+}
+
+/* -- floats -- */
+
+hr {
+    clear: both;
+}
+
+#PageWrapper .ImageBlockCenter {
+margin: 1em 0;
+}
+
+.ItemRight {
+float: right;
+margin: 2px 0 12px 18px;
+text-align: center;
+}
+
+.ItemCenter {
+margin: 2px auto 12px;
+text-align: center;
+clear: both;
+}
+
+.ItemLeft {
+float: left;
+margin: 2px 18px 12px 0;
+text-align: center;
+}
+
+/* -- ImageBlock -- */
+
+.grid_block {
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.grid_block td {
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* none-JavaScript fix for too large images */
+#PageWrapper .ImageBlock img,
+#PageWrapper .ImageBlock .Caption {
+    max-width: 100%;
+}
+
+/* IE9 and Chrome (~20) margin fix for block images with margin: auto */
+.ImageBlock img {
+    margin: 0;
+}
+
+#PageWrapper .ImageBlock {
+    overflow: hidden;
+    max-width: 100%;
+}
+
+#PageWrapper .ImageBlockLeft {
+    float: left;
+    text-align: center;
+}
+
+#PageWrapper .ImageBlockLeft img,
+#PageWrapper .ImageBlockLeft .Caption {
+    margin-right: 5px;
+}
+
+#PageWrapper .ImageBlockRight {
+    float: right;
+    text-align: center;
+}
+
+#PageWrapper .ImageBlockRight img,
+#PageWrapper .ImageBlockRight .Caption {
+    margin-left: 5px;
+}
+
+#PageWrapper .ImageBlockCenter {
+    text-align: center;
+}
+
+#PageWrapper .ImageBlockCenter .Caption {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* BEGIN =Media Block */
+#PageWrapper .MediaBlock {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#PageWrapper .MediaBlockLeft {
+    float: left;
+    margin-right: 15px;
+}
+
+#PageWrapper .MediaBlockRight {
+    float: right;
+    margin-left: 15px;
+}
+
+#PageWrapper .MediaBlockCenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+/* END =Media Block */
+
+/* BEGIN =GDPR consent cookie bar */
+.eucookiebar button, .eucookiebar p{
+    display:inline-block;
+    margin:.25em .5em;
+    font-family:"Lucida Grande",Geneva,Arial,Verdana,sans-serif;
+}
+
+.eucookiebar{
+    text-align:center;
+    position:absolute;
+    top:-250px;
+    left:0;
+    right:0;
+    background:#fff;
+    padding:.5% 2%;
+    box-shadow:0 4px 10px 1px rgba(0,0,0,.2);
+    z-index:9999;
+    font-size:12px;
+    font-family:"Lucida Grande",Geneva,Arial,Verdana,sans-serif;
+    color:#666;
+    transition:top .5s ease,bottom .5s ease, opacity .5s ease
+}
+.eucookiebar a{
+    color:#00f;
+    font-weight:400;
+    text-decoration:underline
+}
+.eucookiebar a:visited{
+    color:#551A8B
+}
+.eucookiebar a:active{
+    color:red
+}
+.eucookiebar button{
+    background:#eee;
+    border:1px solid #888;
+    border-radius:4px;
+    font-size:100%;
+    font-weight:700;
+    color:#666
+}
+.eucookiebar button:hover{
+    background:#666;
+    color:#fff
+}
+.eucookiebar.show{
+    top:0;
+    opacity:1;
+}
+.eucookiebar.hide{
+    top:-250px;
+    opacity:0;
+    pointer-events:none;
+}
+.eucookiebar.bottom{
+    top:auto;
+    bottom:-250px;
+    position:fixed;
+}
+.eucookiebar.bottom.show{
+    bottom:0;
+}
+.eucookiebar.bottom.hide{
+    bottom:-250px;
+}
+/* END =GDPR consent cookie bar */
+
+#PageWrapper .noalignment {
+    float: left;
+    max-width: 100%;
+}
+
+#PageWrapper .noalignment .Caption {
+    margin: 0;
+}
+
+#PageWrapper .pinit {
+    text-align: center;
+}
+
+#PageWrapper .formwrapper .formBuilderForm-Throbber {
+    border: 0;
+}
+#PageWrapper .FormBlockLeft .formwrapper {
+    float: left;
+    margin-right: 5px;
+}
+
+#PageWrapper .FormBlockRight .formwrapper {
+    float: right;
+    margin-left: 5px;
+}
+
+#PageWrapper .FormBlockCenter .formwrapper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* -- Responsive Grid Block -- */
+
+.mobile .responsive-row img,
+.bb1mobile .responsive-row img {
+    max-width: 100% !important;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 768px) {
+    .responsive-row img {
+        max-width: 100% !important;
+        box-sizing: border-box;
+    }
+}
+
+.responsive-row,
+div[class*='responsive_grid_block-'] {
+    overflow: hidden;
+}
+
+div[class*='responsive_col-'] {
+    float: left;
+    min-height: 1px;
+    box-sizing: border-box;
+}
+
+.responsive_grid_block-12 div[class*='responsive_col-'] {
+    width: 8.333%;
+}
+
+.responsive_grid_block-11 div[class*='responsive_col-'] {
+    width: 9.0909%;
+}
+
+.responsive_grid_block-10 div[class*='responsive_col-'] {
+    width: 10%;
+}
+
+.responsive_grid_block-9 div[class*='responsive_col-'] {
+    width: 11.111%;
+}
+
+.responsive_grid_block-8 div[class*='responsive_col-'] {
+    width: 12.5%;
+}
+
+.responsive_grid_block-7 div[class*='responsive_col-'] {
+    width: 14.285%;
+}
+
+.responsive_grid_block-6 div[class*='responsive_col-'] {
+    width: 16.666%;
+}
+
+.responsive_grid_block-5 div[class*='responsive_col-'] {
+    width: 20%;
+}
+
+.responsive_grid_block-4 div[class*='responsive_col-'] {
+    width: 25%;
+}
+
+.responsive_grid_block-3 div[class*='responsive_col-'] {
+    width: 33.333%;
+}
+
+.responsive_grid_block-2 div[class*='responsive_col-'] {
+    width: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+    .responsive_grid_block-12 div[class*='responsive_col-'] {
+        width: 16.666%;
+    }
+
+    .responsive_grid_block-12 > .responsive-row > .responsive_col-7 {
+        clear: left;
+    }
+
+    .responsive_grid_block-10 div[class*='responsive_col-'] {
+        width: 20%;
+    }
+
+    .responsive_grid_block-10 > .responsive-row > .responsive_col-6 {
+        clear: left;
+    }
+
+    .responsive_grid_block-9 div[class*='responsive_col-'] {
+        width: 33.333%;
+    }
+
+    .responsive_grid_block-9 > .responsive-row > .responsive_col-4,
+    .responsive_grid_block-9 > .responsive-row > .responsive_col-7 {
+        clear: left;
+    }
+
+    .responsive_grid_block-8 div[class*='responsive_col-'] {
+        width: 25%;
+    }
+
+    .responsive_grid_block-8 > .responsive-row > .responsive_col-5 {
+        clear: left;
+    }
+
+    .responsive_grid_block-6 div[class*='responsive_col-'] {
+        width: 33.333%;
+    }
+
+    .responsive_grid_block-6 > .responsive-row > .responsive_col-4 {
+        clear: left;
+    }
+
+    .responsive_grid_block-4 div[class*='responsive_col-'] {
+        width: 50%;
+    }
+
+    .responsive_grid_block-4 > .responsive-row > .responsive_col-3 {
+        clear: left;
+    }
+}
+
+@media only screen and (max-width: 447px) {
+
+    .responsive_grid_block-12 div[class*='responsive_col-'] {
+        width: 25%;
+    }
+
+    .responsive_grid_block-12 > .responsive-row > .responsive_col-5,
+    .responsive_grid_block-12 > .responsive-row > .responsive_col-9 {
+        clear: left;
+    }
+
+    .responsive_grid_block-12 > .responsive-row > .responsive_col-7 {
+        clear: none;
+    }
+
+    .responsive_grid_block-8 div[class*='responsive_col-'],
+    .responsive_grid_block-6 div[class*='responsive_col-'] {
+        width: 50%;
+    }
+
+    .responsive_grid_block-8 > .responsive-row .responsive_col-3,
+    .responsive_grid_block-8 > .responsive-row .responsive_col-5,
+    .responsive_grid_block-8 > .responsive-row .responsive_col-7 {
+        clear: left;
+    }
+
+    .responsive_grid_block-6 > .responsive-row > .responsive_col-3,
+    .responsive_grid_block-6 > .responsive-row > .responsive_col-5 {
+        clear: left;
+    }
+
+    .responsive_grid_block-6 > .responsive-row > .responsive_col-4 {
+        clear: none;
+    }
+
+    .responsive_grid_block-11 div[class*='responsive_col-'],
+    .responsive_grid_block-10 div[class*='responsive_col-'],
+    .responsive_grid_block-7 div[class*='responsive_col-'],
+    .responsive_grid_block-5 div[class*='responsive_col-'],
+    .responsive_grid_block-4 div[class*='responsive_col-'],
+    .responsive_grid_block-3 div[class*='responsive_col-'],
+    .responsive_grid_block-2 div[class*='responsive_col-'] {
+        width: 100%;
+    }
+}
+
+/* Responsive videos */
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0; 
+    overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed,
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* center Facebook like and comment widgets */
+#PageWrapper .fb-like,
+#PageWrapper .fb-comments {
+    display: block;
+    text-align:center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* special classname for forms */
+#PageWrapper .formbody td {
+    padding: 2px;
+}
+
+#NavColumn .formbody input[type="text"],
+#NavColumn .formbody textarea,
+#NavColumn .formbody img {
+    max-width: 172px;
+}
+
+#NavColumn .formbody img.captcha_img {
+    margin-bottom: 10px;
+}
+
+/* remove graphical bullets in the C2 Thank you notifications section */
+#notificationOptions,
+#notificationOptions li {
+    list-style-type: none;
+}
+
+.socializeIt,
+.formbody,
+.c2_invitation {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.googlePlusOne {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.with_images .othervisitors p {
+    margin-left:56px;
+}
+
+.thumb_container {
+    float:left;
+    width:50px;
+    height:50px;
+    overflow:hidden;
+    margin-top:3px;
+}
+
+.with_images .othervisitors .submission_thumbnail {
+    width:100%;
+}
+
+.othervisitors {
+    clear: both;
+}
+
+.othervisitors img {
+    border: 0;
+}
+
+/* -- Related Pages Block -- */
+#PageWrapper .RelatedPagesBlock ul {
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+/* down with thumbnail */
+#PageWrapper .RelatedPagesBlock ul.down .relatedPagesThumbnail {
+    float:left;
+    margin-right:10px;
+ }
+ #PageWrapper .RelatedPagesBlock ul.down .relatedPagesThumbnail a {
+    display: block;
+    width:50px;
+    height:50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(/ssimgs/image-placeholder.png);
+ }
+ #PageWrapper .RelatedPagesBlock ul.down h3 {
+    margin-top:0;
+    margin-bottom:0;
+ }
+ #PageWrapper .RelatedPagesBlock ul.down p {
+    margin:0;
+ }
+ #PageWrapper .RelatedPagesBlock ul li {
+    border:none !important;
+ }
+ #PageWrapper .RelatedPagesBlock ul.down  li {
+    clear: both;
+    overflow: hidden;
+    padding-top:10px;
+    padding-bottom:10px;
+ }
+
+/* 4 across */
+#PageWrapper .RelatedPagesBlock ul.across {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+#PageWrapper .RelatedPagesBlock ul.across .relatedPagesThumbnail a {
+    display: block;
+    width:100%;
+    height:200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(/ssimgs/image-placeholder.png);
+ }
+
+#PageWrapper .RelatedPagesBlock ul.across li {
+    box-sizing: border-box;
+    padding:10px 0;
+    width: 200px;
+}
+
+/* text */
+#PageWrapper .RelatedPagesBlock ul.text li {
+    padding-top:10px;
+    padding-bottom:10px;
+}
+#PageWrapper .RelatedPagesBlock ul.text li .relatedPagesThumbnail{
+    display: none;
+}
+#PageWrapper .RelatedPagesBlock ul.text li p {
+    margin:0;
+}
+#PageWrapper .RelatedPagesBlock .text h3 {
+    margin-top:0;
+}
+
+/* -- TOC -- */
+
+.TOC dt {
+font-weight: bold;
+}
+.TOC dd {
+margin-bottom: 20px;
+}
+
+/* ------ Section 8 - Table Layout Styles ----- */
+
+table#PageWrapper {
+border-collapse: collapse;
+}
+
+td#Header,
+td#Footer,
+td#NavColumn,
+td#ContentWrapper,
+td#ContentColumn,
+td#ExtraColumn {
+vertical-align: top;
+}
+
+td#ContentColumn,
+td#ExtraColumn,
+td#NavColumn {
+float: none;
+}
+
+/* ======================================================================= */
+/* Mobilize It! CSS */
+@media only screen and (max-device-width: 480px) {
+    html {
+        -webkit-text-size-adjust: none; /* prevent iOS from scaling text */
+    }
+}
+
+html.landscape #ContentColumn { /* landscape mode */
+    font-size: 125%;
+    line-height: 1.3;
+}
+
+html.mobile .desktopOnly {
+    display: none !important;
+}
+
+.mobileOnly {
+    display: none !important;
+}
+
+html.mobile .mobileOnly {
+    display: block !important;
+}
+
+html.mobile form > table {
+    max-width: 100% !important;
+    width: auto !important;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html.mobile #edit textarea {
+    width: 100% !important;
+}
+
+html.mobile .InvShelpbox {
+    left: 0 !important;
+    width: 100% !important;
+}
+
+html.mobile #NotifyDiv  input[type="text"],
+html.mobile .formbody input[type="text"],
+html.mobile .comments input[type="text"],
+html.mobile #NotifyDiv  textarea,
+html.mobile .formbody textarea,
+html.mobile .comments textarea,
+html.mobile #NotifyDiv  select,
+html.mobile .formbody select,
+html.mobile .comments select {
+    width: 90% !important;
+}
+
+html.mobile #pendingSubmission table {
+    width: 100%;
+}
+
+html.mobile #PageWrapper img {
+    max-width: 100%;
+    height: auto;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html.mobile iframe {
+    max-width: 100%;
+}
+
+html.mobile .fb-like iframe {
+    max-width: none !important;
+}
+
+#toolbar {
+    display:none;
+}
+
+#toolbar {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 1000;
+    padding: 4px 2px;
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+html.mobile #toolbar {
+    display: table;
+    padding: 0;
+}
+
+html.mobile #toolbarInnerWrapper {
+    display: table-cell;
+    vertical-align: middle;
+    height: 35px;
+}
+
+html.mobile #toolbar button {
+    width: 47.5%;
+    font-size: 12px;
+    padding: 0.3em;
+}
+
+html.android2 #toolbar button {
+    background: #f7f7f7;
+    border: 1px solid #2F4255;
+    border-radius: 0.5em;
+}
+
+html.fullView #mobileBtn {
+    width: 97%;
+}
+
+html.mobile #toTopBtn,
+html.mobile #navBtn {
+    width: 64.1%;
+}
+
+html.mobile #fullBtn {
+    width: 31.1%;
+    margin-right: 4px;
+}
+
+html.mobile #fullBtn,
+html.mobile #navBtn {
+    display: inline-block;
+}
+
+#fullBtn,
+#navBtn,
+#toTopBtn,
+html.mobile #mobileBtn {
+    display: none;
+}
+
+.iosbtnfix {
+    height: 1000px;
+    overflow: hidden;
+}
+
+.phantomHeaderImage {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+}
+
+html.mobile,
+html.mobile body {
+    height: 100%;
+}
+
+html.mobile #PageWrapper {
+    margin-top: 35px;
+    text-align: center;
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-size: 100%;
+    -webkit-overflow-scrolling: touch;
+}
+
+html.fullView #PageWrapper {
+    margin-top: 65px;
+}
+
+html.mobile #Header,
+html.mobile #Footer {
+    width: 100%;
+}
+
+html.mobile #Header .Liner{
+    background-size: 100%;
+}
+
+html.mobile #ContentWrapper {
+    padding: 0;
+    float: none;
+    width: auto;
+}
+
+html.mobile #ContentColumn {
+    width: auto;
+}
+
+html.mobile #ContentColumn,
+html.mobile #NavColumn,
+html.mobile #ExtraColumn {
+    float: none;
+    margin: 0;
+}
+
+html.mobile #NavColumn,
+html.mobile #ExtraColumn {
+    margin-top: 200px;
+}
+
+html.mobile #ContentColumn,
+html.mobile #Header,
+html.mobile #NavColumn,
+html.mobile #ExtraColumn {
+    text-align: left;
+}
+
+html.mobile #NavColumn,
+html.mobile #ExtraColumn {
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+html.mobile #Footer {
+    position: absolute;
+    top: 10000px;
+    left: 0;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 550px) {
+    html.mobile .socializeIt,
+    html.mobile .socializeIt img,
+    html.mobile .socializeIt textarea {
+        width: 100% !important;
+    }
+
+    html.mobile .socializeIt td[rowspan="2"],
+    html.mobile .socializeIt td[rowspan="1"] {
+        white-space: normal !important;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    html.mobile .socializeIt .socialIcon {
+        white-space: normal !important;
+        text-align: center;
+        display: block !important;
+    }
+    html.mobile .socializeIt .socialIcon span {
+        display: block !important;
+    }
+}
+
+html.mobile blockquote {
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+/* hide elements in mobile view */
+html.mobile .ExtraNav {
+    display: none !important;
+}
+
+/* ======================================================================= */
+/* design-specific modifications */
+
+@media only screen and (max-width: 359px) { /* portrait mode => narrowed columns */
+    html.mobile #NavColumn,
+    html.mobile #ExtraColumn {
+        width: 155px;
+    }
+}
+
+@media only screen and (min-width: 360px) {
+    html.mobile #NavColumn,
+    html.mobile #ExtraColumn {
+        width: 170px;
+    }
+}
+
+@media only screen and (max-width: 389px) {
+    /* resize squeezed side columns' content */
+    html.mobile #NavColumn *,
+    html.mobile #ExtraColumn * {
+        max-width: 100%;
+        background-size: 100%;
+    }
+
+    html.mobile #NavColumn .pinit > span,
+    html.mobile #ExtraColumn .pinit > span {
+        background-size: 14px 14px;
+    }
+}
+
+@media only screen and (min-width: 390px) {
+    html.mobile #NavColumn,
+    html.mobile #ExtraColumn {
+        width: 190px; /* original column width */
+    }
+}
+
+html.mobile #ContentColumn .Liner {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+html.mobile #NavColumn .Liner,
+html.mobile #ExtraColumn .Liner {
+    padding: 20px 5px;
+}
+
+html.mobile #Footer .Liner {
+    padding: 2%;
+}
+
+html.mobile .CalloutBox {
+    padding: 1%;
+}
+
+/* ======================================================================= */
+/* horizontal nav - base */
+
+#PageWrapper div.HorizontalNavBar ul.root {
+    display: inline-block;
+    vertical-align: top;
+    *display: inline;
+    *zoom: 1;
+    margin: 0 auto;
+    padding: 0;
+    line-height: 18px;
+    font-size: 16px;
+}
+
+#PageWrapper div.HorizontalNavBar ul ul {
+    display: none;
+    position: absolute;
+    top: 27px;
+    left: 1px;
+    z-index: 2;
+    margin: 0 0 0 -1px;
+    padding: 0;
+    *zoom: 1;
+    background: #fff;
+    width: 150px;
+}
+
+#PageWrapper div.HorizontalNavBar ul ul ul {
+    top: 0;
+    left: 150px;
+    margin: 0 0 0 -2px;
+    _top: 1px;
+}
+
+#PageWrapper div.HorizontalNavBar li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    float: left;
+    white-space: nowrap;
+    border: 0;
+}
+
+#PageWrapper div.HorizontalNavBar li.li1 {
+    z-index: 1;
+}
+
+#PageWrapper div.HorizontalNavBar li.hover {
+    z-index: 2;
+}
+
+#PageWrapper div.HorizontalNavBar li li {
+    float: none;
+    white-space: normal;
+    border: 1px solid #fff;
+    background: #fff;
+    margin-top: -1px;
+}
+
+#PageWrapper div.HorizontalNavBar span.navheader,
+#PageWrapper div.HorizontalNavBar a {
+    display: block;
+    padding: 4px 8px;
+    text-decoration: none;
+    _float: left;
+}
+
+#PageWrapper div.HorizontalNavBar ul ul span.navheader,
+#PageWrapper div.HorizontalNavBar ul ul a {
+    _float: none;
+}
+
+#PageWrapper div.HorizontalNavBar span.navheader {
+    cursor: default;
+    *zoom: 1;
+    position: relative;
+    padding-left: 18px;
+}
+
+#PageWrapper div.HorizontalNavBar ul ul span.navheader {
+    padding-left: 8px;
+    padding-right: 18px;
+}
+
+#PageWrapper div.HorizontalNavBar span.navheader ins {
+    display: block;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    margin-top: -2px;
+    left: 2px;
+    border: 6px solid #fff;
+    border-bottom: 0;
+}
+
+#PageWrapper div.HorizontalNavBar ul ul span.navheader ins {
+    left: auto;
+    top: 50%;
+    right: 2px;
+    margin-top: -6px;
+    border-bottom-width: 6px;
+    border-bottom-style: solid;
+}
+
+#PageWrapper div.HorizontalNavBar li.hover ul,
+#PageWrapper div.HorizontalNavBarCSS li:hover ul {
+    display: block;
+}
+
+#PageWrapper div.HorizontalNavBar li.hover li ul,
+#PageWrapper div.HorizontalNavBarCSS li:hover li ul {
+    display: none;
+}
+
+#PageWrapper div.HorizontalNavBar li li.hover ul,
+#PageWrapper div.HorizontalNavBarCSS li li:hover ul {
+    display: block;
+}
+
+#PageWrapper div.HorizontalNavBar li li.hover li ul,
+#PageWrapper div.HorizontalNavBarCSS li li:hover li ul {
+    display: none;
+}
+
+#PageWrapper div.HorizontalNavBar li li li.hover ul,
+#PageWrapper div.HorizontalNavBarCSS li li li:hover ul {
+    display: block;
+}
+
+#PageWrapper div.HorizontalNavBar li li li.hover li ul,
+#PageWrapper div.HorizontalNavBarCSS li li li:hover li ul {
+    display: none;
+}
+
+#PageWrapper div.HorizontalNavBar li li li li.hover ul,
+#PageWrapper div.HorizontalNavBarCSS li li li li:hover ul {
+    display: block;
+}
+
+/* .wide */
+#PageWrapper div.HorizontalNavBarWide ul.root {
+    width: 100%;
+    display: table;
+}
+
+#PageWrapper div.HorizontalNavBarWide li {
+    display: table-cell;
+    float: none;
+    text-align: center;
+}
+
+#PageWrapper div.HorizontalNavBarWide li li {
+    text-align: left;
+    display: block;
+}
+
+/* alignment */
+#PageWrapper div.HorizontalNavBarLeft,
+#PageWrapper div.HorizontalNavBarLeft li {
+    text-align: left;
+}
+
+#PageWrapper div.HorizontalNavBarCenter,
+#PageWrapper div.HorizontalNavBarCenter li {
+    text-align: center;
+}
+
+#PageWrapper div.HorizontalNavBarRight,
+#PageWrapper div.HorizontalNavBarRight li {
+    text-align: right;
+}
+
+#PageWrapper div.HorizontalNavBarCenter li li,
+#PageWrapper div.HorizontalNavBarRight li li {
+    text-align: left;
+}
+
+/* mobile */
+html.mobile #PageWrapper div.HorizontalNavBar ul.root > li {
+    z-index: 2;
+}
+
+html.mobile #PageWrapper div.HorizontalNavBar ul.root > li.hover {
+    z-index: 3;
+}
+
+/* ======================================================================= */
+/* horizontal nav - design */
+
+#Header .Liner {
+    position: relative;
+}
+
+#Header .HorizontalNavBar {
+    width: 100%;
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+}
+
+html.mobile #Header .HorizontalNavBar {
+    bottom: 2px;
+}
+
+#PageWrapper div.HorizontalNavBar ul.root {
+    font-size: 13px;
+    line-height: 16px;
+}
+
+#PageWrapper div.HorizontalNavBar ul ul {
+    top: 25px;
+}
+
+#PageWrapper div.HorizontalNavBar li {
+    background: transparent;
+    border: 1px solid #000;
+    margin-left: -1px;
+}
+
+#PageWrapper div.HorizontalNavBar li li {
+    background: #fff;
+    border-color: #000;
+    margin-left: 0;
+}
+
+#PageWrapper div.HorizontalNavBar span.navheader,
+#PageWrapper div.HorizontalNavBar a {
+    background: #fff;
+    color: #0000EE;
+    font-weight: normal;
+}
+
+#PageWrapper div.HorizontalNavBar a:visited {
+    color: #55199A;
+}
+
+#PageWrapper div.HorizontalNavBar .hover > span.navheader,
+#PageWrapper div.HorizontalNavBar span.navheader:hover,
+#PageWrapper div.HorizontalNavBar a:hover {
+    background: #ccc;
+    color: #0000EE;
+}
+
+#PageWrapper div.HorizontalNavBar ul ul {
+    background: #fff;
+    width: 180px;
+    margin-left: -2px;
+}
+
+#PageWrapper div.HorizontalNavBar ul ul ul {
+    left: 180px;
+}
+
+#PageWrapper div.HorizontalNavBar span.navheader ins {
+    border-color: #fff;
+    border-top-color: #000;
+}
+
+#PageWrapper div.HorizontalNavBar ul ul span.navheader ins {
+    border-color: #fff;
+    border-left-color: #000;
+}
+
+#PageWrapper div.HorizontalNavBar .hover > span.navheader ins,
+#PageWrapper div.HorizontalNavBar span.navheader:hover ins {
+    border-color: #ccc;
+    border-top-color: #000;
+}
+
+#PageWrapper div.HorizontalNavBar ul ul .hover > span.navheader ins,
+#PageWrapper div.HorizontalNavBar ul ul span.navheader:hover ins {
+    border-color: #ccc;
+    border-left-color: #000;
+}
+
+/* disable hover state on mobile */
+html.mobile #PageWrapper div.HorizontalNavBar a:hover,
+html.mobile #PageWrapper div.HorizontalNavBar .hover > span.navheader,
+html.mobile #PageWrapper div.HorizontalNavBar span.navheader:hover {
+    background: #fff;
+    color: #0000EE;
+}
+
+html.mobile #PageWrapper div.HorizontalNavBar .hover > span.navheader ins,
+html.mobile #PageWrapper div.HorizontalNavBar span.navheader:hover ins {
+    border-color: #fff;
+    border-top-color: #000;
+}
+
+html.mobile #PageWrapper div.HorizontalNavBar ul ul .hover > span.navheader ins,
+html.mobile #PageWrapper div.HorizontalNavBar ul ul span.navheader:hover ins {
+    border-color: #fff;
+    border-left-color: #000;
+}
+/***** C2 styles *****/
+.c2Form {
+    padding:8px;
+    border:1px solid #ddd;
+}
+
+.c2Form input[type=text] {
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 440px) {
+    .c2Form table,
+    .c2Form tr,
+    .c2Form tbody,
+    .c2Form td {
+        display: block;
+    }
+    .c2Form table p {
+        text-align: left !important;
+    }
+    .otherText {
+        display: block;
+    }
+}
+
+.InvShelp {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    background-color: #ffc;
+}
+
+.InvShelpT {
+    background:#ddd;
+    padding:0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin:0px;
+    padding:0px;
+    text-align:left;
+}
+
+a:link.InvShelp {text-decoration:none; color:#000;}
+
+.InvShelpbox {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    background-color: #ffc;
+    padding: 2px;
+    border: 1px solid #666;
+}
+
+.InvSquestions {
+    font-weight:bold;
+    font-size:14px;
+    margin:0;
+}
+
+.titleInput {
+    width:80%;
+    padding-top:4px;
+    margin:0;
+}
+
+.storyInput {
+    width:98%;
+    padding-top:4px;
+    margin:0;
+}
+
+.otherText {
+}
+
+.dividerRule {
+    border-top:1px solid #ddd;
+}
+
+/***** Blog It! styles *****/
+
+.blogItItem .blogItThumbnail {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    max-width: 150px;
+}
+
+.blogItItem .blogItReadMore {
+    clear: both;
+}
+
+  /* additional styles */
+
+/***********************************************/
+/* Customizations from SiteDesigner start here */
+/***********************************************/
+
+/* font Amble definition */
+@font-face {
+    font-family: Amble;
+    font-display: fallback;
+    src: url('/css_webfonts/amble-webfont.eot');
+    src: url('/css_webfonts/amble-webfont.eot?iefix') format('eot'),
+         url('/css_webfonts/amble-webfont.woff') format('woff'),
+         url('/css_webfonts/amble-webfont.ttf') format('truetype'),
+         url('/css_webfonts/amble-webfont.svg#ambleregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+} 
+
+/* font Amble bold definition */
+@font-face {
+    font-family: Amble;
+    font-display: fallback;
+    src: url('/css_webfonts/amble-bold-webfont.eot');
+    src: url('/css_webfonts/amble-bold-webfont.eot?iefix') format('eot'),
+         url('/css_webfonts/amble-bold-webfont.woff') format('woff'),
+         url('/css_webfonts/amble-bold-webfont.ttf') format('truetype'),
+         url('/css_webfonts/amble-bold-webfont.svg#amblebold') format('svg');
+    font-weight: bold;
+        font-style: normal;
+} 
+
+/* font Amble italic definition */
+@font-face {
+    font-family: Amble;
+    font-display: fallback;
+    src: url('/css_webfonts/amble-italic-webfont.eot');
+    src: url('/css_webfonts/amble-italic-webfont.eot?iefix') format('eot'),
+         url('/css_webfonts/amble-italic-webfont.woff') format('woff'),
+         url('/css_webfonts/amble-italic-webfont.ttf') format('truetype'),
+         url('/css_webfonts/amble-italic-webfont.svg#ambleitalic') format('svg');
+    font-weight: normal;
+        font-style: italic;
+} 
+
+/* font Amble bold-italic definition */
+@font-face {
+    font-family: Amble;
+    font-display: fallback;
+    src: url('/css_webfonts/amble-bold-italic-webfont.eot');
+    src: url('/css_webfonts/amble-bold-italic-webfont.eot?iefix') format('eot'),
+         url('/css_webfonts/amble-bold-italic-webfont.woff') format('woff'),
+         url('/css_webfonts/amble-bold-italic-webfont.ttf') format('truetype'),
+         url('/css_webfonts/amble-bold-italic-webfont.svg#amblebold_italic') format('svg');
+    font-weight: bold;
+        font-style: italic;
+} 
+body, html.mobile body{background-color:#010068;font-size:14px;
+}html.mobile body{
+}@media (max-width:768px) {body{
+}}@media (max-width:447px) {body{
+}}#PageWrapper #Footer .Liner p, html.mobile #PageWrapper #Footer .Liner p{
+}html.mobile #PageWrapper #Footer .Liner p{
+}@media (max-width:768px) {#PageWrapper #Footer .Liner p{
+}}@media (max-width:447px) {#PageWrapper #Footer .Liner p{
+}}#PageWrapper #Footer .Liner, html.mobile #PageWrapper #Footer .Liner{
+}html.mobile #PageWrapper #Footer .Liner{
+}@media (max-width:768px) {#PageWrapper #Footer .Liner{
+}}@media (max-width:447px) {#PageWrapper #Footer .Liner{
+}}#PageWrapper #HeaderWrapper, html.mobile #PageWrapper #HeaderWrapper{
+}html.mobile #PageWrapper #HeaderWrapper{
+}@media (max-width:768px) {#PageWrapper #HeaderWrapper{
+}}@media (max-width:447px) {#PageWrapper #HeaderWrapper{
+}}#PageWrapper #Header .Liner, html.mobile #PageWrapper #Header .Liner{background-image:url("/sd/image-files/logo-edited-with-text-1000x138-1.jpg");min-height:151px;
+        min-height:151px;}html.mobile #PageWrapper #Header .Liner{
+}@media (max-width:768px) {#PageWrapper #Header .Liner{
+}}@media (max-width:447px) {#PageWrapper #Header .Liner{
+}}#PageWrapper #ExtraColumn .Liner, html.mobile #PageWrapper #ExtraColumn .Liner{background-color:#eae9fc;
+}html.mobile #PageWrapper #ExtraColumn .Liner{
+}@media (max-width:768px) {#PageWrapper #ExtraColumn .Liner{
+}}@media (max-width:447px) {#PageWrapper #ExtraColumn .Liner{
+}}#PageWrapper #ExtraColumn .Liner, html.mobile #PageWrapper #ExtraColumn .Liner{
+}html.mobile #PageWrapper #ExtraColumn .Liner{
+}@media (max-width:768px) {#PageWrapper #ExtraColumn .Liner{
+}}@media (max-width:447px) {#PageWrapper #ExtraColumn .Liner{
+}}#PageWrapper #NavColumn .Liner, html.mobile #PageWrapper #NavColumn .Liner{background-color:#bcd7eb;
+}html.mobile #PageWrapper #NavColumn .Liner{
+}@media (max-width:768px) {#PageWrapper #NavColumn .Liner{
+}}@media (max-width:447px) {#PageWrapper #NavColumn .Liner{
+}}#PageWrapper #ContentColumn .Liner, html.mobile #PageWrapper #ContentColumn .Liner{
+}html.mobile #PageWrapper #ContentColumn .Liner{
+}@media (max-width:768px) {#PageWrapper #ContentColumn .Liner{
+}}@media (max-width:447px) {#PageWrapper #ContentColumn .Liner{
+}}#PageWrapper #ContentColumn .Liner, html.mobile #PageWrapper #ContentColumn .Liner{background-color:#ffffff;
+}html.mobile #PageWrapper #ContentColumn .Liner{
+}@media (max-width:768px) {#PageWrapper #ContentColumn .Liner{
+}}@media (max-width:447px) {#PageWrapper #ContentColumn .Liner{
+}}#PageWrapper #ContentColumn , html.mobile #PageWrapper #ContentColumn {
+}html.mobile #PageWrapper #ContentColumn {
+}@media (max-width:768px) {#PageWrapper #ContentColumn {
+}}@media (max-width:447px) {#PageWrapper #ContentColumn {
+}}#PageWrapper #ContentColumn p, html.mobile #PageWrapper #ContentColumn p{
+}html.mobile #PageWrapper #ContentColumn p{
+}@media (max-width:768px) {#PageWrapper #ContentColumn p{
+}}@media (max-width:447px) {#PageWrapper #ContentColumn p{
+}}body #PageWrapper, html.mobile body #PageWrapper{box-shadow:3px 3px 3px 5px #cccccc;
+}html.mobile body #PageWrapper{
+}@media (max-width:768px) {body #PageWrapper{
+}}@media (max-width:447px) {body #PageWrapper{
+}}#PageWrapper, html.mobile #PageWrapper{background-color:#ffffff;
+}html.mobile #PageWrapper{
+}@media (max-width:768px) {#PageWrapper{
+}}@media (max-width:447px) {#PageWrapper{
+}}#PageWrapper h1, html.mobile #PageWrapper h1{
+}html.mobile #PageWrapper h1{
+}@media (max-width:768px) {#PageWrapper h1{
+}}@media (max-width:447px) {#PageWrapper h1{
+}}#PageWrapper .Stripe1 h1, html.mobile #PageWrapper .Stripe1 h1{
+}html.mobile #PageWrapper .Stripe1 h1{
+}@media (max-width:768px) {#PageWrapper .Stripe1 h1{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 h1{
+}}#PageWrapper .Stripe2 h1, html.mobile #PageWrapper .Stripe2 h1{
+}html.mobile #PageWrapper .Stripe2 h1{
+}@media (max-width:768px) {#PageWrapper .Stripe2 h1{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 h1{
+}}#PageWrapper .Stripe3 h1, html.mobile #PageWrapper .Stripe3 h1{
+}html.mobile #PageWrapper .Stripe3 h1{
+}@media (max-width:768px) {#PageWrapper .Stripe3 h1{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 h1{
+}}#PageWrapper h2, html.mobile #PageWrapper h2{
+}html.mobile #PageWrapper h2{
+}@media (max-width:768px) {#PageWrapper h2{
+}}@media (max-width:447px) {#PageWrapper h2{
+}}#PageWrapper .Stripe1 h2, html.mobile #PageWrapper .Stripe1 h2{
+}html.mobile #PageWrapper .Stripe1 h2{
+}@media (max-width:768px) {#PageWrapper .Stripe1 h2{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 h2{
+}}#PageWrapper .Stripe2 h2, html.mobile #PageWrapper .Stripe2 h2{
+}html.mobile #PageWrapper .Stripe2 h2{
+}@media (max-width:768px) {#PageWrapper .Stripe2 h2{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 h2{
+}}#PageWrapper .Stripe3 h2, html.mobile #PageWrapper .Stripe3 h2{
+}html.mobile #PageWrapper .Stripe3 h2{
+}@media (max-width:768px) {#PageWrapper .Stripe3 h2{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 h2{
+}}#PageWrapper h3, html.mobile #PageWrapper h3{
+}html.mobile #PageWrapper h3{
+}@media (max-width:768px) {#PageWrapper h3{
+}}@media (max-width:447px) {#PageWrapper h3{
+}}#PageWrapper .Stripe1 h3, html.mobile #PageWrapper .Stripe1 h3{
+}html.mobile #PageWrapper .Stripe1 h3{
+}@media (max-width:768px) {#PageWrapper .Stripe1 h3{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 h3{
+}}#PageWrapper .Stripe2 h3, html.mobile #PageWrapper .Stripe2 h3{
+}html.mobile #PageWrapper .Stripe2 h3{
+}@media (max-width:768px) {#PageWrapper .Stripe2 h3{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 h3{
+}}#PageWrapper .Stripe3 h3, html.mobile #PageWrapper .Stripe3 h3{
+}html.mobile #PageWrapper .Stripe3 h3{
+}@media (max-width:768px) {#PageWrapper .Stripe3 h3{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 h3{
+}}#PageWrapper h4, html.mobile #PageWrapper h4{background-color:#ffffff;
+}html.mobile #PageWrapper h4{
+}@media (max-width:768px) {#PageWrapper h4{
+}}@media (max-width:447px) {#PageWrapper h4{
+}}#PageWrapper .Stripe1 h4, html.mobile #PageWrapper .Stripe1 h4{
+}html.mobile #PageWrapper .Stripe1 h4{
+}@media (max-width:768px) {#PageWrapper .Stripe1 h4{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 h4{
+}}#PageWrapper .Stripe2 h4, html.mobile #PageWrapper .Stripe2 h4{
+}html.mobile #PageWrapper .Stripe2 h4{
+}@media (max-width:768px) {#PageWrapper .Stripe2 h4{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 h4{
+}}#PageWrapper .Stripe3 h4, html.mobile #PageWrapper .Stripe3 h4{
+}html.mobile #PageWrapper .Stripe3 h4{
+}@media (max-width:768px) {#PageWrapper .Stripe3 h4{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 h4{
+}}.Navigation h3, html.mobile .Navigation h3{
+}html.mobile .Navigation h3{
+}@media (max-width:768px) {.Navigation h3{
+}}@media (max-width:447px) {.Navigation h3{
+}}#PageWrapper .Navigation h3, html.mobile #PageWrapper .Navigation h3{
+}html.mobile #PageWrapper .Navigation h3{
+}@media (max-width:768px) {#PageWrapper .Navigation h3{
+}}@media (max-width:447px) {#PageWrapper .Navigation h3{
+}}.Navigation a, html.mobile .Navigation a{font-weight:normal;font-style:normal;text-decoration:none;border-style:solid;border-top-width:0;border-right-width:0;border-bottom-width:0;border-left-width:0;
+}html.mobile .Navigation a{
+}@media (max-width:768px) {.Navigation a{
+}}@media (max-width:447px) {.Navigation a{
+}}#PageWrapper div.Navigation a, html.mobile #PageWrapper div.Navigation a{font-weight:normal;font-style:normal;text-decoration:none;border-style:solid;border-top-width:0;border-right-width:0;border-bottom-width:0;border-left-width:0;
+}html.mobile #PageWrapper div.Navigation a{
+}@media (max-width:768px) {#PageWrapper div.Navigation a{
+}}@media (max-width:447px) {#PageWrapper div.Navigation a{
+}}.Navigation a,
+#PageWrapper div.Navigation a {}
+html.mobile .Navigation a,
+html.mobile #PageWrapper div.Navigation a {}.Navigation a:link, html.mobile .Navigation a:link{color:#f0ff2a;background-color:#12127d;border-color:#8ba9cc;
+}html.mobile .Navigation a:link{
+}@media (max-width:768px) {.Navigation a:link{
+}}@media (max-width:447px) {.Navigation a:link{
+}}#PageWrapper div.Navigation a:link, html.mobile #PageWrapper div.Navigation a:link{color:#f0ff2a;background-color:#12127d;border-color:#8ba9cc;
+}html.mobile #PageWrapper div.Navigation a:link{
+}@media (max-width:768px) {#PageWrapper div.Navigation a:link{
+}}@media (max-width:447px) {#PageWrapper div.Navigation a:link{
+}}.Navigation a:visited, html.mobile .Navigation a:visited{background-color:#12127d;color:#dcf5e1;
+}html.mobile .Navigation a:visited{
+}@media (max-width:768px) {.Navigation a:visited{
+}}@media (max-width:447px) {.Navigation a:visited{
+}}#PageWrapper div.Navigation a:visited, html.mobile #PageWrapper div.Navigation a:visited{background-color:#12127d;color:#dcf5e1;
+}html.mobile #PageWrapper div.Navigation a:visited{
+}@media (max-width:768px) {#PageWrapper div.Navigation a:visited{
+}}@media (max-width:447px) {#PageWrapper div.Navigation a:visited{
+}}.Navigation a:hover, html.mobile .Navigation a:hover{background-color:#eae9fc;color:#12127d;
+}html.mobile .Navigation a:hover{
+}@media (max-width:768px) {.Navigation a:hover{
+}}@media (max-width:447px) {.Navigation a:hover{
+}}#PageWrapper div.Navigation a:hover, html.mobile #PageWrapper div.Navigation a:hover{background-color:#eae9fc;color:#12127d;
+}html.mobile #PageWrapper div.Navigation a:hover{
+}@media (max-width:768px) {#PageWrapper div.Navigation a:hover{
+}}@media (max-width:447px) {#PageWrapper div.Navigation a:hover{
+}}#PageWrapper .TOC, html.mobile #PageWrapper .TOC{
+}html.mobile #PageWrapper .TOC{
+}@media (max-width:768px) {#PageWrapper .TOC{
+}}@media (max-width:447px) {#PageWrapper .TOC{
+}}#PageWrapper .Stripe1 .TOC, html.mobile #PageWrapper .Stripe1 .TOC{
+}html.mobile #PageWrapper .Stripe1 .TOC{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .TOC{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .TOC{
+}}#PageWrapper .Stripe2 .TOC, html.mobile #PageWrapper .Stripe2 .TOC{
+}html.mobile #PageWrapper .Stripe2 .TOC{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .TOC{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .TOC{
+}}#PageWrapper .Stripe3 .TOC, html.mobile #PageWrapper .Stripe3 .TOC{
+}html.mobile #PageWrapper .Stripe3 .TOC{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .TOC{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .TOC{
+}}#PageWrapper .Ezine, html.mobile #PageWrapper .Ezine{border-color:#666666;
+}html.mobile #PageWrapper .Ezine{
+}@media (max-width:768px) {#PageWrapper .Ezine{
+}}@media (max-width:447px) {#PageWrapper .Ezine{
+}}#PageWrapper .Stripe1 .Ezine2, html.mobile #PageWrapper .Stripe1 .Ezine2{
+}html.mobile #PageWrapper .Stripe1 .Ezine2{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .Ezine2{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .Ezine2{
+}}#PageWrapper .Stripe2 .Ezine2, html.mobile #PageWrapper .Stripe2 .Ezine2{
+}html.mobile #PageWrapper .Stripe2 .Ezine2{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .Ezine2{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .Ezine2{
+}}#PageWrapper .Stripe3 .Ezine2, html.mobile #PageWrapper .Stripe3 .Ezine2{
+}html.mobile #PageWrapper .Stripe3 .Ezine2{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .Ezine2{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .Ezine2{
+}}
+
+#PageWrapper .Ezine {
+    padding: 4px 0;
+}
+#PageWrapper #Header .HorizontalNavBar, html.mobile #PageWrapper #Header .HorizontalNavBar{
+}html.mobile #PageWrapper #Header .HorizontalNavBar{
+}@media (max-width:768px) {#PageWrapper #Header .HorizontalNavBar{
+}}@media (max-width:447px) {#PageWrapper #Header .HorizontalNavBar{
+}}#PageWrapper div.HorizontalNavBar .li1, html.mobile #PageWrapper div.HorizontalNavBar .li1{
+}html.mobile #PageWrapper div.HorizontalNavBar .li1{
+}@media (max-width:768px) {#PageWrapper div.HorizontalNavBar .li1{
+}}@media (max-width:447px) {#PageWrapper div.HorizontalNavBar .li1{
+}}#PageWrapper div.HorizontalNavBar ul a, html.mobile #PageWrapper div.HorizontalNavBar ul a{font-family:Amble, Arial, Helvetica, sans-serif;font-weight:normal;padding-left:18px;
+}html.mobile #PageWrapper div.HorizontalNavBar ul a{
+}@media (max-width:768px) {#PageWrapper div.HorizontalNavBar ul a{
+}}@media (max-width:447px) {#PageWrapper div.HorizontalNavBar ul a{
+}}#PageWrapper div.HorizontalNavBar ul a:link, html.mobile #PageWrapper div.HorizontalNavBar ul a:link{background-color:#ffffff;
+}html.mobile #PageWrapper div.HorizontalNavBar ul a:link{
+}@media (max-width:768px) {#PageWrapper div.HorizontalNavBar ul a:link{
+}}@media (max-width:447px) {#PageWrapper div.HorizontalNavBar ul a:link{
+}}#PageWrapper div.HorizontalNavBar ul a:visited, html.mobile #PageWrapper div.HorizontalNavBar ul a:visited{background-color:#fcfcfc;
+}html.mobile #PageWrapper div.HorizontalNavBar ul a:visited{
+}@media (max-width:768px) {#PageWrapper div.HorizontalNavBar ul a:visited{
+}}@media (max-width:447px) {#PageWrapper div.HorizontalNavBar ul a:visited{
+}}#PageWrapper div.HorizontalNavBar ul a:hover, html.mobile #PageWrapper div.HorizontalNavBar ul a:hover{background-color:#fafbfc;color:#000000;
+}html.mobile #PageWrapper div.HorizontalNavBar ul a:hover{
+}@media (max-width:768px) {#PageWrapper div.HorizontalNavBar ul a:hover{
+}}@media (max-width:447px) {#PageWrapper div.HorizontalNavBar ul a:hover{
+}}#PageWrapper div.HorizontalNavBar ul span.navheader, html.mobile #PageWrapper div.HorizontalNavBar ul span.navheader{background-color:#ffffff;font-family:Amble, Arial, Helvetica, sans-serif;font-weight:normal;padding-left:18px;
+}html.mobile #PageWrapper div.HorizontalNavBar ul span.navheader{
+}@media (max-width:768px) {#PageWrapper div.HorizontalNavBar ul span.navheader{
+}}@media (max-width:447px) {#PageWrapper div.HorizontalNavBar ul span.navheader{
+}}#PageWrapper div.HorizontalNavBar ul span.navheader:hover, #PageWrapper div.HorizontalNavBar li:hover > span.navheader, #PageWrapper div.HorizontalNavBar .hover > span.navheader, html.mobile #PageWrapper div.HorizontalNavBar ul span.navheader:hover, #PageWrapper div.HorizontalNavBar li:hover > span.navheader, #PageWrapper div.HorizontalNavBar .hover > span.navheader{background-color:#fafbfc;color:#000000;
+}html.mobile #PageWrapper div.HorizontalNavBar ul span.navheader:hover, #PageWrapper div.HorizontalNavBar li:hover > span.navheader, #PageWrapper div.HorizontalNavBar .hover > span.navheader{
+}@media (max-width:768px) {#PageWrapper div.HorizontalNavBar ul span.navheader:hover, #PageWrapper div.HorizontalNavBar li:hover > span.navheader, #PageWrapper div.HorizontalNavBar .hover > span.navheader{
+}}@media (max-width:447px) {#PageWrapper div.HorizontalNavBar ul span.navheader:hover, #PageWrapper div.HorizontalNavBar li:hover > span.navheader, #PageWrapper div.HorizontalNavBar .hover > span.navheader{
+}}#PageWrapper div.HorizontalNavBar ul span.navheader ins, html.mobile #PageWrapper div.HorizontalNavBar ul span.navheader ins{border-right-color:#ffffff;border-bottom-color:#ffffff;border-left-color:#ffffff;
+}html.mobile #PageWrapper div.HorizontalNavBar ul span.navheader ins{
+}@media (max-width:768px) {#PageWrapper div.HorizontalNavBar ul span.navheader ins{
+}}@media (max-width:447px) {#PageWrapper div.HorizontalNavBar ul span.navheader ins{
+}}#PageWrapper div.HorizontalNavBar ul span.navheader:hover ins, #PageWrapper div.HorizontalNavBar ul li:hover > span.navheader ins, #PageWrapper div.HorizontalNavBar ul .hover > span.navheader ins, html.mobile #PageWrapper div.HorizontalNavBar ul span.navheader:hover ins, #PageWrapper div.HorizontalNavBar ul li:hover > span.navheader ins, #PageWrapper div.HorizontalNavBar ul .hover > span.navheader ins{border-right-color:#fafbfc;border-bottom-color:#fafbfc;border-left-color:#fafbfc;
+}html.mobile #PageWrapper div.HorizontalNavBar ul span.navheader:hover ins, #PageWrapper div.HorizontalNavBar ul li:hover > span.navheader ins, #PageWrapper div.HorizontalNavBar ul .hover > span.navheader ins{
+}@media (max-width:768px) {#PageWrapper div.HorizontalNavBar ul span.navheader:hover ins, #PageWrapper div.HorizontalNavBar ul li:hover > span.navheader ins, #PageWrapper div.HorizontalNavBar ul .hover > span.navheader ins{
+}}@media (max-width:447px) {#PageWrapper div.HorizontalNavBar ul span.navheader:hover ins, #PageWrapper div.HorizontalNavBar ul li:hover > span.navheader ins, #PageWrapper div.HorizontalNavBar ul .hover > span.navheader ins{
+}}#PageWrapper div.HorizontalNavBar, html.mobile #PageWrapper div.HorizontalNavBar{top:0px;bottom:auto;
+}html.mobile #PageWrapper div.HorizontalNavBar{
+}@media (max-width:768px) {#PageWrapper div.HorizontalNavBar{
+}}@media (max-width:447px) {#PageWrapper div.HorizontalNavBar{
+}}#PageWrapper div.HorizontalNavBar ul.root, html.mobile #PageWrapper div.HorizontalNavBar ul.root{padding-left:191px;padding-right:3px;
+}html.mobile #PageWrapper div.HorizontalNavBar ul.root{
+}@media (max-width:768px) {#PageWrapper div.HorizontalNavBar ul.root{
+}}@media (max-width:447px) {#PageWrapper div.HorizontalNavBar ul.root{
+}}#PageWrapper div.HorizontalNavBar .li1 .li2, html.mobile #PageWrapper div.HorizontalNavBar .li1 .li2{
+}html.mobile #PageWrapper div.HorizontalNavBar .li1 .li2{
+}@media (max-width:768px) {#PageWrapper div.HorizontalNavBar .li1 .li2{
+}}@media (max-width:447px) {#PageWrapper div.HorizontalNavBar .li1 .li2{
+}}#PageWrapper div.HorizontalNavBar .li1 .li2 .li3, html.mobile #PageWrapper div.HorizontalNavBar .li1 .li2 .li3{
+}html.mobile #PageWrapper div.HorizontalNavBar .li1 .li2 .li3{
+}@media (max-width:768px) {#PageWrapper div.HorizontalNavBar .li1 .li2 .li3{
+}}@media (max-width:447px) {#PageWrapper div.HorizontalNavBar .li1 .li2 .li3{
+}}#PageWrapper div.HorizontalNavBar ul ul, html.mobile #PageWrapper div.HorizontalNavBar ul ul{
+}html.mobile #PageWrapper div.HorizontalNavBar ul ul{
+}@media (max-width:768px) {#PageWrapper div.HorizontalNavBar ul ul{
+}}@media (max-width:447px) {#PageWrapper div.HorizontalNavBar ul ul{
+}}#PageWrapper div.HorizontalNavBar ul ul a, html.mobile #PageWrapper div.HorizontalNavBar ul ul a{
+}html.mobile #PageWrapper div.HorizontalNavBar ul ul a{
+}@media (max-width:768px) {#PageWrapper div.HorizontalNavBar ul ul a{
+}}@media (max-width:447px) {#PageWrapper div.HorizontalNavBar ul ul a{
+}}#PageWrapper div.HorizontalNavBar ul ul a:link, html.mobile #PageWrapper div.HorizontalNavBar ul ul a:link{
+}html.mobile #PageWrapper div.HorizontalNavBar ul ul a:link{
+}@media (max-width:768px) {#PageWrapper div.HorizontalNavBar ul ul a:link{
+}}@media (max-width:447px) {#PageWrapper div.HorizontalNavBar ul ul a:link{
+}}#PageWrapper div.HorizontalNavBar ul ul a:visited, html.mobile #PageWrapper div.HorizontalNavBar ul ul a:visited{
+}html.mobile #PageWrapper div.HorizontalNavBar ul ul a:visited{
+}@media (max-width:768px) {#PageWrapper div.HorizontalNavBar ul ul a:visited{
+}}@media (max-width:447px) {#PageWrapper div.HorizontalNavBar ul ul a:visited{
+}}#PageWrapper div.HorizontalNavBar ul ul a:hover, html.mobile #PageWrapper div.HorizontalNavBar ul ul a:hover{
+}html.mobile #PageWrapper div.HorizontalNavBar ul ul a:hover{
+}@media (max-width:768px) {#PageWrapper div.HorizontalNavBar ul ul a:hover{
+}}@media (max-width:447px) {#PageWrapper div.HorizontalNavBar ul ul a:hover{
+}}#PageWrapper div.HorizontalNavBar ul ul span.navheader, html.mobile #PageWrapper div.HorizontalNavBar ul ul span.navheader{
+}html.mobile #PageWrapper div.HorizontalNavBar ul ul span.navheader{
+}@media (max-width:768px) {#PageWrapper div.HorizontalNavBar ul ul span.navheader{
+}}@media (max-width:447px) {#PageWrapper div.HorizontalNavBar ul ul span.navheader{
+}}#PageWrapper div.HorizontalNavBar ul ul span.navheader:hover, #PageWrapper div.HorizontalNavBar ul ul li:hover > span.navheader, html.mobile #PageWrapper div.HorizontalNavBar ul ul span.navheader:hover, #PageWrapper div.HorizontalNavBar ul ul li:hover > span.navheader{
+}html.mobile #PageWrapper div.HorizontalNavBar ul ul span.navheader:hover, #PageWrapper div.HorizontalNavBar ul ul li:hover > span.navheader{
+}@media (max-width:768px) {#PageWrapper div.HorizontalNavBar ul ul span.navheader:hover, #PageWrapper div.HorizontalNavBar ul ul li:hover > span.navheader{
+}}@media (max-width:447px) {#PageWrapper div.HorizontalNavBar ul ul span.navheader:hover, #PageWrapper div.HorizontalNavBar ul ul li:hover > span.navheader{
+}}#PageWrapper div.HorizontalNavBar ul ul span.navheader ins, html.mobile #PageWrapper div.HorizontalNavBar ul ul span.navheader ins{border-top-color:#FFFFFF;border-right-color:#FFFFFF;border-bottom-color:#FFFFFF;border-left-color:#000000;
+}html.mobile #PageWrapper div.HorizontalNavBar ul ul span.navheader ins{
+}@media (max-width:768px) {#PageWrapper div.HorizontalNavBar ul ul span.navheader ins{
+}}@media (max-width:447px) {#PageWrapper div.HorizontalNavBar ul ul span.navheader ins{
+}}#PageWrapper div.HorizontalNavBar ul ul span.navheader:hover ins, html.mobile #PageWrapper div.HorizontalNavBar ul ul span.navheader:hover ins{border-top-color:#fafbfc;border-right-color:#fafbfc;border-bottom-color:#fafbfc;
+}html.mobile #PageWrapper div.HorizontalNavBar ul ul span.navheader:hover ins{
+}@media (max-width:768px) {#PageWrapper div.HorizontalNavBar ul ul span.navheader:hover ins{
+}}@media (max-width:447px) {#PageWrapper div.HorizontalNavBar ul ul span.navheader:hover ins{
+}}#PageWrapper .RSSbox, html.mobile #PageWrapper .RSSbox{
+}html.mobile #PageWrapper .RSSbox{
+}@media (max-width:768px) {#PageWrapper .RSSbox{
+}}@media (max-width:447px) {#PageWrapper .RSSbox{
+}}#PageWrapper .Stripe1 .RSSbox, html.mobile #PageWrapper .Stripe1 .RSSbox{
+}html.mobile #PageWrapper .Stripe1 .RSSbox{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .RSSbox{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .RSSbox{
+}}#PageWrapper .Stripe2 .RSSbox, html.mobile #PageWrapper .Stripe2 .RSSbox{
+}html.mobile #PageWrapper .Stripe2 .RSSbox{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .RSSbox{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .RSSbox{
+}}#PageWrapper .Stripe3 .RSSbox, html.mobile #PageWrapper .Stripe3 .RSSbox{
+}html.mobile #PageWrapper .Stripe3 .RSSbox{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .RSSbox{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .RSSbox{
+}}#PageWrapper .RSSbox .questionMark, html.mobile #PageWrapper .RSSbox .questionMark{
+}html.mobile #PageWrapper .RSSbox .questionMark{
+}@media (max-width:768px) {#PageWrapper .RSSbox .questionMark{
+}}@media (max-width:447px) {#PageWrapper .RSSbox .questionMark{
+}}#PageWrapper .Stripe1 .RSSbox .questionMark, html.mobile #PageWrapper .Stripe1 .RSSbox .questionMark{
+}html.mobile #PageWrapper .Stripe1 .RSSbox .questionMark{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .RSSbox .questionMark{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .RSSbox .questionMark{
+}}#PageWrapper .Stripe2 .RSSbox .questionMark, html.mobile #PageWrapper .Stripe2 .RSSbox .questionMark{
+}html.mobile #PageWrapper .Stripe2 .RSSbox .questionMark{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .RSSbox .questionMark{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .RSSbox .questionMark{
+}}#PageWrapper .Stripe3 .RSSbox .questionMark, html.mobile #PageWrapper .Stripe3 .RSSbox .questionMark{
+}html.mobile #PageWrapper .Stripe3 .RSSbox .questionMark{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .RSSbox .questionMark{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .RSSbox .questionMark{
+}}#PageWrapper .ImageBlock img, html.mobile #PageWrapper .ImageBlock img{
+}html.mobile #PageWrapper .ImageBlock img{
+}@media (max-width:768px) {#PageWrapper .ImageBlock img{
+}}@media (max-width:447px) {#PageWrapper .ImageBlock img{
+}}#PageWrapper .Stripe1 .ImageBlock img, html.mobile #PageWrapper .Stripe1 .ImageBlock img{
+}html.mobile #PageWrapper .Stripe1 .ImageBlock img{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .ImageBlock img{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .ImageBlock img{
+}}#PageWrapper .Stripe1 .ImageBlock img, html.mobile #PageWrapper .Stripe1 .ImageBlock img{
+}html.mobile #PageWrapper .Stripe1 .ImageBlock img{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .ImageBlock img{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .ImageBlock img{
+}}#PageWrapper .Stripe1 .ImageBlock img, html.mobile #PageWrapper .Stripe1 .ImageBlock img{
+}html.mobile #PageWrapper .Stripe1 .ImageBlock img{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .ImageBlock img{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .ImageBlock img{
+}}#PageWrapper .ImageBlock, html.mobile #PageWrapper .ImageBlock{
+}html.mobile #PageWrapper .ImageBlock{
+}@media (max-width:768px) {#PageWrapper .ImageBlock{
+}}@media (max-width:447px) {#PageWrapper .ImageBlock{
+}}#PageWrapper .Stripe1 .ImageBlock, html.mobile #PageWrapper .Stripe1 .ImageBlock{
+}html.mobile #PageWrapper .Stripe1 .ImageBlock{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .ImageBlock{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .ImageBlock{
+}}#PageWrapper .Stripe2 .ImageBlock, html.mobile #PageWrapper .Stripe2 .ImageBlock{
+}html.mobile #PageWrapper .Stripe2 .ImageBlock{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .ImageBlock{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .ImageBlock{
+}}#PageWrapper .Stripe3 .ImageBlock, html.mobile #PageWrapper .Stripe3 .ImageBlock{
+}html.mobile #PageWrapper .Stripe3 .ImageBlock{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .ImageBlock{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .ImageBlock{
+}}#PageWrapper .ImageBlockRight, html.mobile #PageWrapper .ImageBlockRight{
+}html.mobile #PageWrapper .ImageBlockRight{
+}@media (max-width:768px) {#PageWrapper .ImageBlockRight{
+}}@media (max-width:447px) {#PageWrapper .ImageBlockRight{
+}}#PageWrapper .ImageBlockLeft, html.mobile #PageWrapper .ImageBlockLeft{
+}html.mobile #PageWrapper .ImageBlockLeft{
+}@media (max-width:768px) {#PageWrapper .ImageBlockLeft{
+}}@media (max-width:447px) {#PageWrapper .ImageBlockLeft{
+}}#ContentColumn ol, html.mobile #ContentColumn ol{
+}html.mobile #ContentColumn ol{
+}@media (max-width:768px) {#ContentColumn ol{
+}}@media (max-width:447px) {#ContentColumn ol{
+}}#ContentColumn ol li, html.mobile #ContentColumn ol li{
+}html.mobile #ContentColumn ol li{
+}@media (max-width:768px) {#ContentColumn ol li{
+}}@media (max-width:447px) {#ContentColumn ol li{
+}}#ContentColumn .Stripe1 ol li, html.mobile #ContentColumn .Stripe1 ol li{
+}html.mobile #ContentColumn .Stripe1 ol li{
+}@media (max-width:768px) {#ContentColumn .Stripe1 ol li{
+}}@media (max-width:447px) {#ContentColumn .Stripe1 ol li{
+}}#ContentColumn .Stripe2 ol li, html.mobile #ContentColumn .Stripe2 ol li{
+}html.mobile #ContentColumn .Stripe2 ol li{
+}@media (max-width:768px) {#ContentColumn .Stripe2 ol li{
+}}@media (max-width:447px) {#ContentColumn .Stripe2 ol li{
+}}#ContentColumn .Stripe3 ol li, html.mobile #ContentColumn .Stripe3 ol li{
+}html.mobile #ContentColumn .Stripe3 ol li{
+}@media (max-width:768px) {#ContentColumn .Stripe3 ol li{
+}}@media (max-width:447px) {#ContentColumn .Stripe3 ol li{
+}}#ContentColumn ul, html.mobile #ContentColumn ul{
+}html.mobile #ContentColumn ul{
+}@media (max-width:768px) {#ContentColumn ul{
+}}@media (max-width:447px) {#ContentColumn ul{
+}}#ContentColumn .Stripe1 ul, html.mobile #ContentColumn .Stripe1 ul{
+}html.mobile #ContentColumn .Stripe1 ul{
+}@media (max-width:768px) {#ContentColumn .Stripe1 ul{
+}}@media (max-width:447px) {#ContentColumn .Stripe1 ul{
+}}#ContentColumn .Stripe2 ul, html.mobile #ContentColumn .Stripe2 ul{
+}html.mobile #ContentColumn .Stripe2 ul{
+}@media (max-width:768px) {#ContentColumn .Stripe2 ul{
+}}@media (max-width:447px) {#ContentColumn .Stripe2 ul{
+}}#ContentColumn .Stripe3 ul, html.mobile #ContentColumn .Stripe3 ul{
+}html.mobile #ContentColumn .Stripe3 ul{
+}@media (max-width:768px) {#ContentColumn .Stripe3 ul{
+}}@media (max-width:447px) {#ContentColumn .Stripe3 ul{
+}}#ContentColumn ul li, html.mobile #ContentColumn ul li{
+}html.mobile #ContentColumn ul li{
+}@media (max-width:768px) {#ContentColumn ul li{
+}}@media (max-width:447px) {#ContentColumn ul li{
+}}#ContentColumn .Stripe1 ul li, html.mobile #ContentColumn .Stripe1 ul li{
+}html.mobile #ContentColumn .Stripe1 ul li{
+}@media (max-width:768px) {#ContentColumn .Stripe1 ul li{
+}}@media (max-width:447px) {#ContentColumn .Stripe1 ul li{
+}}#ContentColumn .Stripe2 ul li, html.mobile #ContentColumn .Stripe2 ul li{
+}html.mobile #ContentColumn .Stripe2 ul li{
+}@media (max-width:768px) {#ContentColumn .Stripe2 ul li{
+}}@media (max-width:447px) {#ContentColumn .Stripe2 ul li{
+}}#ContentColumn .Stripe3 ul li, html.mobile #ContentColumn .Stripe3 ul li{
+}html.mobile #ContentColumn .Stripe3 ul li{
+}@media (max-width:768px) {#ContentColumn .Stripe3 ul li{
+}}@media (max-width:447px) {#ContentColumn .Stripe3 ul li{
+}}#PageWrapper .CalloutBox p, html.mobile #PageWrapper .CalloutBox p{
+}html.mobile #PageWrapper .CalloutBox p{
+}@media (max-width:768px) {#PageWrapper .CalloutBox p{
+}}@media (max-width:447px) {#PageWrapper .CalloutBox p{
+}}#PageWrapper .Stripe1 .CalloutBox p, html.mobile #PageWrapper .Stripe1 .CalloutBox p{
+}html.mobile #PageWrapper .Stripe1 .CalloutBox p{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .CalloutBox p{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .CalloutBox p{
+}}#PageWrapper .Stripe2 .CalloutBox p, html.mobile #PageWrapper .Stripe2 .CalloutBox p{
+}html.mobile #PageWrapper .Stripe2 .CalloutBox p{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .CalloutBox p{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .CalloutBox p{
+}}#PageWrapper .Stripe3 .CalloutBox p, html.mobile #PageWrapper .Stripe3 .CalloutBox p{
+}html.mobile #PageWrapper .Stripe3 .CalloutBox p{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .CalloutBox p{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .CalloutBox p{
+}}#PageWrapper .CalloutBox, html.mobile #PageWrapper .CalloutBox{
+}html.mobile #PageWrapper .CalloutBox{
+}@media (max-width:768px) {#PageWrapper .CalloutBox{
+}}@media (max-width:447px) {#PageWrapper .CalloutBox{
+}}#PageWrapper .Stripe1 .CalloutBox, html.mobile #PageWrapper .Stripe1 .CalloutBox{
+}html.mobile #PageWrapper .Stripe1 .CalloutBox{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .CalloutBox{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .CalloutBox{
+}}#PageWrapper .Stripe2 .CalloutBox, html.mobile #PageWrapper .Stripe2 .CalloutBox{
+}html.mobile #PageWrapper .Stripe2 .CalloutBox{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .CalloutBox{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .CalloutBox{
+}}#PageWrapper .Stripe3 .CalloutBox, html.mobile #PageWrapper .Stripe3 .CalloutBox{
+}html.mobile #PageWrapper .Stripe3 .CalloutBox{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .CalloutBox{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .CalloutBox{
+}}#PageWrapper .ReminderBox, html.mobile #PageWrapper .ReminderBox{background-color:#CCCCCC;
+}html.mobile #PageWrapper .ReminderBox{
+}@media (max-width:768px) {#PageWrapper .ReminderBox{
+}}@media (max-width:447px) {#PageWrapper .ReminderBox{
+}}#PageWrapper .Stripe1 .ReminderBox, html.mobile #PageWrapper .Stripe1 .ReminderBox{
+}html.mobile #PageWrapper .Stripe1 .ReminderBox{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .ReminderBox{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .ReminderBox{
+}}#PageWrapper .Stripe2 .ReminderBox, html.mobile #PageWrapper .Stripe2 .ReminderBox{
+}html.mobile #PageWrapper .Stripe2 .ReminderBox{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .ReminderBox{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .ReminderBox{
+}}#PageWrapper .Stripe3 .ReminderBox, html.mobile #PageWrapper .Stripe3 .ReminderBox{
+}html.mobile #PageWrapper .Stripe3 .ReminderBox{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .ReminderBox{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .ReminderBox{
+}}#PageWrapper .ReminderBox h4, html.mobile #PageWrapper .ReminderBox h4{
+}html.mobile #PageWrapper .ReminderBox h4{
+}@media (max-width:768px) {#PageWrapper .ReminderBox h4{
+}}@media (max-width:447px) {#PageWrapper .ReminderBox h4{
+}}#PageWrapper .Stripe1 .ReminderBox h4, html.mobile #PageWrapper .Stripe1 .ReminderBox h4{
+}html.mobile #PageWrapper .Stripe1 .ReminderBox h4{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .ReminderBox h4{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .ReminderBox h4{
+}}#PageWrapper .Stripe2 .ReminderBox h4, html.mobile #PageWrapper .Stripe2 .ReminderBox h4{
+}html.mobile #PageWrapper .Stripe2 .ReminderBox h4{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .ReminderBox h4{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .ReminderBox h4{
+}}#PageWrapper .Stripe3 .ReminderBox h4, html.mobile #PageWrapper .Stripe3 .ReminderBox h4{
+}html.mobile #PageWrapper .Stripe3 .ReminderBox h4{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .ReminderBox h4{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .ReminderBox h4{
+}}#PageWrapper .ReminderBox p, html.mobile #PageWrapper .ReminderBox p{
+}html.mobile #PageWrapper .ReminderBox p{
+}@media (max-width:768px) {#PageWrapper .ReminderBox p{
+}}@media (max-width:447px) {#PageWrapper .ReminderBox p{
+}}#PageWrapper .Stripe1 .ReminderBox p, html.mobile #PageWrapper .Stripe1 .ReminderBox p{
+}html.mobile #PageWrapper .Stripe1 .ReminderBox p{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .ReminderBox p{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .ReminderBox p{
+}}#PageWrapper .Stripe2 .ReminderBox p, html.mobile #PageWrapper .Stripe2 .ReminderBox p{
+}html.mobile #PageWrapper .Stripe2 .ReminderBox p{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .ReminderBox p{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .ReminderBox p{
+}}#PageWrapper .Stripe3 .ReminderBox p, html.mobile #PageWrapper .Stripe3 .ReminderBox p{
+}html.mobile #PageWrapper .Stripe3 .ReminderBox p{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .ReminderBox p{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .ReminderBox p{
+}}#ContentColumn a, html.mobile #ContentColumn a{
+}html.mobile #ContentColumn a{
+}@media (max-width:768px) {#ContentColumn a{
+}}@media (max-width:447px) {#ContentColumn a{
+}}#ContentColumn .Stripe1 a:link, html.mobile #ContentColumn .Stripe1 a:link{
+}html.mobile #ContentColumn .Stripe1 a:link{
+}@media (max-width:768px) {#ContentColumn .Stripe1 a:link{
+}}@media (max-width:447px) {#ContentColumn .Stripe1 a:link{
+}}#ContentColumn .Stripe2 a:link, html.mobile #ContentColumn .Stripe2 a:link{
+}html.mobile #ContentColumn .Stripe2 a:link{
+}@media (max-width:768px) {#ContentColumn .Stripe2 a:link{
+}}@media (max-width:447px) {#ContentColumn .Stripe2 a:link{
+}}#ContentColumn .Stripe3 a:link, html.mobile #ContentColumn .Stripe3 a:link{
+}html.mobile #ContentColumn .Stripe3 a:link{
+}@media (max-width:768px) {#ContentColumn .Stripe3 a:link{
+}}@media (max-width:447px) {#ContentColumn .Stripe3 a:link{
+}}#ContentColumn a:link, html.mobile #ContentColumn a:link{color:#0000EE;
+}html.mobile #ContentColumn a:link{
+}@media (max-width:768px) {#ContentColumn a:link{
+}}@media (max-width:447px) {#ContentColumn a:link{
+}}#ContentColumn .Stripe1 a:link, html.mobile #ContentColumn .Stripe1 a:link{
+}html.mobile #ContentColumn .Stripe1 a:link{
+}@media (max-width:768px) {#ContentColumn .Stripe1 a:link{
+}}@media (max-width:447px) {#ContentColumn .Stripe1 a:link{
+}}#ContentColumn .Stripe2 a:link, html.mobile #ContentColumn .Stripe2 a:link{
+}html.mobile #ContentColumn .Stripe2 a:link{
+}@media (max-width:768px) {#ContentColumn .Stripe2 a:link{
+}}@media (max-width:447px) {#ContentColumn .Stripe2 a:link{
+}}#ContentColumn .Stripe3 a:link, html.mobile #ContentColumn .Stripe3 a:link{
+}html.mobile #ContentColumn .Stripe3 a:link{
+}@media (max-width:768px) {#ContentColumn .Stripe3 a:link{
+}}@media (max-width:447px) {#ContentColumn .Stripe3 a:link{
+}}#ContentColumn a:visited, html.mobile #ContentColumn a:visited{
+}html.mobile #ContentColumn a:visited{
+}@media (max-width:768px) {#ContentColumn a:visited{
+}}@media (max-width:447px) {#ContentColumn a:visited{
+}}#ContentColumn .Stripe1 a:visited, html.mobile #ContentColumn .Stripe1 a:visited{
+}html.mobile #ContentColumn .Stripe1 a:visited{
+}@media (max-width:768px) {#ContentColumn .Stripe1 a:visited{
+}}@media (max-width:447px) {#ContentColumn .Stripe1 a:visited{
+}}#ContentColumn .Stripe2 a:visited, html.mobile #ContentColumn .Stripe2 a:visited{
+}html.mobile #ContentColumn .Stripe2 a:visited{
+}@media (max-width:768px) {#ContentColumn .Stripe2 a:visited{
+}}@media (max-width:447px) {#ContentColumn .Stripe2 a:visited{
+}}#ContentColumn .Stripe3 a:visited, html.mobile #ContentColumn .Stripe3 a:visited{
+}html.mobile #ContentColumn .Stripe3 a:visited{
+}@media (max-width:768px) {#ContentColumn .Stripe3 a:visited{
+}}@media (max-width:447px) {#ContentColumn .Stripe3 a:visited{
+}}#ContentColumn a:hover, html.mobile #ContentColumn a:hover{
+}html.mobile #ContentColumn a:hover{
+}@media (max-width:768px) {#ContentColumn a:hover{
+}}@media (max-width:447px) {#ContentColumn a:hover{
+}}#ContentColumn .Stripe1 a:hover, html.mobile #ContentColumn .Stripe1 a:hover{
+}html.mobile #ContentColumn .Stripe1 a:hover{
+}@media (max-width:768px) {#ContentColumn .Stripe1 a:hover{
+}}@media (max-width:447px) {#ContentColumn .Stripe1 a:hover{
+}}#ContentColumn .Stripe2 a:hover, html.mobile #ContentColumn .Stripe2 a:hover{
+}html.mobile #ContentColumn .Stripe2 a:hover{
+}@media (max-width:768px) {#ContentColumn .Stripe2 a:hover{
+}}@media (max-width:447px) {#ContentColumn .Stripe2 a:hover{
+}}#ContentColumn .Stripe3 a:hover, html.mobile #ContentColumn .Stripe3 a:hover{
+}html.mobile #ContentColumn .Stripe3 a:hover{
+}@media (max-width:768px) {#ContentColumn .Stripe3 a:hover{
+}}@media (max-width:447px) {#ContentColumn .Stripe3 a:hover{
+}}#ExtraColumn a, html.mobile #ExtraColumn a{
+}html.mobile #ExtraColumn a{
+}@media (max-width:768px) {#ExtraColumn a{
+}}@media (max-width:447px) {#ExtraColumn a{
+}}#ExtraColumn a:link, html.mobile #ExtraColumn a:link{
+}html.mobile #ExtraColumn a:link{
+}@media (max-width:768px) {#ExtraColumn a:link{
+}}@media (max-width:447px) {#ExtraColumn a:link{
+}}#ExtraColumn a:visited, html.mobile #ExtraColumn a:visited{
+}html.mobile #ExtraColumn a:visited{
+}@media (max-width:768px) {#ExtraColumn a:visited{
+}}@media (max-width:447px) {#ExtraColumn a:visited{
+}}#ExtraColumn a:hover, html.mobile #ExtraColumn a:hover{
+}html.mobile #ExtraColumn a:hover{
+}@media (max-width:768px) {#ExtraColumn a:hover{
+}}@media (max-width:447px) {#ExtraColumn a:hover{
+}}#PageWrapper #Footer a, html.mobile #PageWrapper #Footer a{
+}html.mobile #PageWrapper #Footer a{
+}@media (max-width:768px) {#PageWrapper #Footer a{
+}}@media (max-width:447px) {#PageWrapper #Footer a{
+}}#PageWrapper #Footer a:link, html.mobile #PageWrapper #Footer a:link{
+}html.mobile #PageWrapper #Footer a:link{
+}@media (max-width:768px) {#PageWrapper #Footer a:link{
+}}@media (max-width:447px) {#PageWrapper #Footer a:link{
+}}#PageWrapper #Footer a:visited, html.mobile #PageWrapper #Footer a:visited{
+}html.mobile #PageWrapper #Footer a:visited{
+}@media (max-width:768px) {#PageWrapper #Footer a:visited{
+}}@media (max-width:447px) {#PageWrapper #Footer a:visited{
+}}#PageWrapper #Footer a:hover, html.mobile #PageWrapper #Footer a:hover{
+}html.mobile #PageWrapper #Footer a:hover{
+}@media (max-width:768px) {#PageWrapper #Footer a:hover{
+}}@media (max-width:447px) {#PageWrapper #Footer a:hover{
+}}#PageWrapper .ResponsiveNavButton, html.mobile #PageWrapper .ResponsiveNavButton{
+}html.mobile #PageWrapper .ResponsiveNavButton{
+}@media (max-width:768px) {#PageWrapper .ResponsiveNavButton{
+}}@media (max-width:447px) {#PageWrapper .ResponsiveNavButton{
+}}#PageWrapper .ResponsiveNav, html.mobile #PageWrapper .ResponsiveNav{
+}html.mobile #PageWrapper .ResponsiveNav{
+}@media (max-width:768px) {#PageWrapper .ResponsiveNav{
+}}@media (max-width:447px) {#PageWrapper .ResponsiveNav{
+}}#PageWrapper .ResponsiveNav a, html.mobile #PageWrapper .ResponsiveNav a{
+}html.mobile #PageWrapper .ResponsiveNav a{
+}@media (max-width:768px) {#PageWrapper .ResponsiveNav a{
+}}@media (max-width:447px) {#PageWrapper .ResponsiveNav a{
+}}#PageWrapper .ResponsiveNav a, html.mobile #PageWrapper .ResponsiveNav a{
+}html.mobile #PageWrapper .ResponsiveNav a{
+}@media (max-width:768px) {#PageWrapper .ResponsiveNav a{
+}}@media (max-width:447px) {#PageWrapper .ResponsiveNav a{
+}}#PageWrapper .ResponsiveNav a:link, html.mobile #PageWrapper .ResponsiveNav a:link{
+}html.mobile #PageWrapper .ResponsiveNav a:link{
+}@media (max-width:768px) {#PageWrapper .ResponsiveNav a:link{
+}}@media (max-width:447px) {#PageWrapper .ResponsiveNav a:link{
+}}#PageWrapper .ResponsiveNav a:visited, html.mobile #PageWrapper .ResponsiveNav a:visited{
+}html.mobile #PageWrapper .ResponsiveNav a:visited{
+}@media (max-width:768px) {#PageWrapper .ResponsiveNav a:visited{
+}}@media (max-width:447px) {#PageWrapper .ResponsiveNav a:visited{
+}}#PageWrapper .ResponsiveNav a:hover, html.mobile #PageWrapper .ResponsiveNav a:hover{
+}html.mobile #PageWrapper .ResponsiveNav a:hover{
+}@media (max-width:768px) {#PageWrapper .ResponsiveNav a:hover{
+}}@media (max-width:447px) {#PageWrapper .ResponsiveNav a:hover{
+}}#PageWrapper .ResponsiveNav span, html.mobile #PageWrapper .ResponsiveNav span{
+}html.mobile #PageWrapper .ResponsiveNav span{
+}@media (max-width:768px) {#PageWrapper .ResponsiveNav span{
+}}@media (max-width:447px) {#PageWrapper .ResponsiveNav span{
+}}#NavColumn a, html.mobile #NavColumn a{
+}html.mobile #NavColumn a{
+}@media (max-width:768px) {#NavColumn a{
+}}@media (max-width:447px) {#NavColumn a{
+}}#NavColumn a:link, html.mobile #NavColumn a:link{
+}html.mobile #NavColumn a:link{
+}@media (max-width:768px) {#NavColumn a:link{
+}}@media (max-width:447px) {#NavColumn a:link{
+}}#NavColumn a:visited, html.mobile #NavColumn a:visited{
+}html.mobile #NavColumn a:visited{
+}@media (max-width:768px) {#NavColumn a:visited{
+}}@media (max-width:447px) {#NavColumn a:visited{
+}}#NavColumn a:hover, html.mobile #NavColumn a:hover{
+}html.mobile #NavColumn a:hover{
+}@media (max-width:768px) {#NavColumn a:hover{
+}}@media (max-width:447px) {#NavColumn a:hover{
+}}#PageWrapper .ReminderBox a, html.mobile #PageWrapper .ReminderBox a{
+}html.mobile #PageWrapper .ReminderBox a{
+}@media (max-width:768px) {#PageWrapper .ReminderBox a{
+}}@media (max-width:447px) {#PageWrapper .ReminderBox a{
+}}#PageWrapper .Stripe1 .ReminderBox a:link, html.mobile #PageWrapper .Stripe1 .ReminderBox a:link{
+}html.mobile #PageWrapper .Stripe1 .ReminderBox a:link{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .ReminderBox a:link{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .ReminderBox a:link{
+}}#PageWrapper .Stripe2 .ReminderBox a:link, html.mobile #PageWrapper .Stripe2 .ReminderBox a:link{
+}html.mobile #PageWrapper .Stripe2 .ReminderBox a:link{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .ReminderBox a:link{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .ReminderBox a:link{
+}}#PageWrapper .Stripe3 .ReminderBox a:link, html.mobile #PageWrapper .Stripe3 .ReminderBox a:link{
+}html.mobile #PageWrapper .Stripe3 .ReminderBox a:link{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .ReminderBox a:link{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .ReminderBox a:link{
+}}#PageWrapper .ReminderBox a:link, html.mobile #PageWrapper .ReminderBox a:link{
+}html.mobile #PageWrapper .ReminderBox a:link{
+}@media (max-width:768px) {#PageWrapper .ReminderBox a:link{
+}}@media (max-width:447px) {#PageWrapper .ReminderBox a:link{
+}}#PageWrapper .Stripe1 .ReminderBox a:link, html.mobile #PageWrapper .Stripe1 .ReminderBox a:link{
+}html.mobile #PageWrapper .Stripe1 .ReminderBox a:link{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .ReminderBox a:link{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .ReminderBox a:link{
+}}#PageWrapper .Stripe2 .ReminderBox a:link, html.mobile #PageWrapper .Stripe2 .ReminderBox a:link{
+}html.mobile #PageWrapper .Stripe2 .ReminderBox a:link{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .ReminderBox a:link{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .ReminderBox a:link{
+}}#PageWrapper .Stripe3 .ReminderBox a:link, html.mobile #PageWrapper .Stripe3 .ReminderBox a:link{
+}html.mobile #PageWrapper .Stripe3 .ReminderBox a:link{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .ReminderBox a:link{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .ReminderBox a:link{
+}}#PageWrapper .ReminderBox a:visited, html.mobile #PageWrapper .ReminderBox a:visited{
+}html.mobile #PageWrapper .ReminderBox a:visited{
+}@media (max-width:768px) {#PageWrapper .ReminderBox a:visited{
+}}@media (max-width:447px) {#PageWrapper .ReminderBox a:visited{
+}}#PageWrapper .Stripe1 .ReminderBox a:visited, html.mobile #PageWrapper .Stripe1 .ReminderBox a:visited{
+}html.mobile #PageWrapper .Stripe1 .ReminderBox a:visited{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .ReminderBox a:visited{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .ReminderBox a:visited{
+}}#PageWrapper .Stripe2 .ReminderBox a:visited, html.mobile #PageWrapper .Stripe2 .ReminderBox a:visited{
+}html.mobile #PageWrapper .Stripe2 .ReminderBox a:visited{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .ReminderBox a:visited{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .ReminderBox a:visited{
+}}#PageWrapper .Stripe3 .ReminderBox a:visited, html.mobile #PageWrapper .Stripe3 .ReminderBox a:visited{
+}html.mobile #PageWrapper .Stripe3 .ReminderBox a:visited{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .ReminderBox a:visited{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .ReminderBox a:visited{
+}}#PageWrapper .ReminderBox a:hover, html.mobile #PageWrapper .ReminderBox a:hover{
+}html.mobile #PageWrapper .ReminderBox a:hover{
+}@media (max-width:768px) {#PageWrapper .ReminderBox a:hover{
+}}@media (max-width:447px) {#PageWrapper .ReminderBox a:hover{
+}}#PageWrapper .Stripe1 .ReminderBox a:hover, html.mobile #PageWrapper .Stripe1 .ReminderBox a:hover{
+}html.mobile #PageWrapper .Stripe1 .ReminderBox a:hover{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .ReminderBox a:hover{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .ReminderBox a:hover{
+}}#PageWrapper .Stripe2 .ReminderBox a:hover, html.mobile #PageWrapper .Stripe2 .ReminderBox a:hover{
+}html.mobile #PageWrapper .Stripe2 .ReminderBox a:hover{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .ReminderBox a:hover{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .ReminderBox a:hover{
+}}#PageWrapper .Stripe3 .ReminderBox a:hover, html.mobile #PageWrapper .Stripe3 .ReminderBox a:hover{
+}html.mobile #PageWrapper .Stripe3 .ReminderBox a:hover{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .ReminderBox a:hover{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .ReminderBox a:hover{
+}}#PageWrapper .CalloutBox a, html.mobile #PageWrapper .CalloutBox a{
+}html.mobile #PageWrapper .CalloutBox a{
+}@media (max-width:768px) {#PageWrapper .CalloutBox a{
+}}@media (max-width:447px) {#PageWrapper .CalloutBox a{
+}}#PageWrapper .Stripe1 .CalloutBox a:link, html.mobile #PageWrapper .Stripe1 .CalloutBox a:link{
+}html.mobile #PageWrapper .Stripe1 .CalloutBox a:link{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .CalloutBox a:link{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .CalloutBox a:link{
+}}#PageWrapper .Stripe2 .CalloutBox a:link, html.mobile #PageWrapper .Stripe2 .CalloutBox a:link{
+}html.mobile #PageWrapper .Stripe2 .CalloutBox a:link{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .CalloutBox a:link{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .CalloutBox a:link{
+}}#PageWrapper .Stripe3 .CalloutBox a:link, html.mobile #PageWrapper .Stripe3 .CalloutBox a:link{
+}html.mobile #PageWrapper .Stripe3 .CalloutBox a:link{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .CalloutBox a:link{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .CalloutBox a:link{
+}}#PageWrapper .CalloutBox a:link, html.mobile #PageWrapper .CalloutBox a:link{
+}html.mobile #PageWrapper .CalloutBox a:link{
+}@media (max-width:768px) {#PageWrapper .CalloutBox a:link{
+}}@media (max-width:447px) {#PageWrapper .CalloutBox a:link{
+}}#PageWrapper .Stripe1 .CalloutBox a:link, html.mobile #PageWrapper .Stripe1 .CalloutBox a:link{
+}html.mobile #PageWrapper .Stripe1 .CalloutBox a:link{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .CalloutBox a:link{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .CalloutBox a:link{
+}}#PageWrapper .Stripe2 .CalloutBox a:link, html.mobile #PageWrapper .Stripe2 .CalloutBox a:link{
+}html.mobile #PageWrapper .Stripe2 .CalloutBox a:link{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .CalloutBox a:link{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .CalloutBox a:link{
+}}#PageWrapper .Stripe3 .CalloutBox a:link, html.mobile #PageWrapper .Stripe3 .CalloutBox a:link{
+}html.mobile #PageWrapper .Stripe3 .CalloutBox a:link{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .CalloutBox a:link{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .CalloutBox a:link{
+}}#PageWrapper .CalloutBox a:visited, html.mobile #PageWrapper .CalloutBox a:visited{
+}html.mobile #PageWrapper .CalloutBox a:visited{
+}@media (max-width:768px) {#PageWrapper .CalloutBox a:visited{
+}}@media (max-width:447px) {#PageWrapper .CalloutBox a:visited{
+}}#PageWrapper .Stripe1 .CalloutBox a:visited, html.mobile #PageWrapper .Stripe1 .CalloutBox a:visited{
+}html.mobile #PageWrapper .Stripe1 .CalloutBox a:visited{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .CalloutBox a:visited{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .CalloutBox a:visited{
+}}#PageWrapper .Stripe2 .CalloutBox a:visited, html.mobile #PageWrapper .Stripe2 .CalloutBox a:visited{
+}html.mobile #PageWrapper .Stripe2 .CalloutBox a:visited{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .CalloutBox a:visited{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .CalloutBox a:visited{
+}}#PageWrapper .Stripe3 .CalloutBox a:visited, html.mobile #PageWrapper .Stripe3 .CalloutBox a:visited{
+}html.mobile #PageWrapper .Stripe3 .CalloutBox a:visited{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .CalloutBox a:visited{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .CalloutBox a:visited{
+}}#PageWrapper .CalloutBox a:hover, html.mobile #PageWrapper .CalloutBox a:hover{
+}html.mobile #PageWrapper .CalloutBox a:hover{
+}@media (max-width:768px) {#PageWrapper .CalloutBox a:hover{
+}}@media (max-width:447px) {#PageWrapper .CalloutBox a:hover{
+}}#PageWrapper .Stripe1 .CalloutBox a:hover, html.mobile #PageWrapper .Stripe1 .CalloutBox a:hover{
+}html.mobile #PageWrapper .Stripe1 .CalloutBox a:hover{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .CalloutBox a:hover{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .CalloutBox a:hover{
+}}#PageWrapper .Stripe2 .CalloutBox a:hover, html.mobile #PageWrapper .Stripe2 .CalloutBox a:hover{
+}html.mobile #PageWrapper .Stripe2 .CalloutBox a:hover{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .CalloutBox a:hover{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .CalloutBox a:hover{
+}}#PageWrapper .Stripe3 .CalloutBox a:hover, html.mobile #PageWrapper .Stripe3 .CalloutBox a:hover{
+}html.mobile #PageWrapper .Stripe3 .CalloutBox a:hover{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .CalloutBox a:hover{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .CalloutBox a:hover{
+}}#toolbar, html.mobile #toolbar{
+}html.mobile #toolbar{
+}@media (max-width:768px) {#toolbar{
+}}@media (max-width:447px) {#toolbar{
+}}hr, html.mobile hr{
+}html.mobile hr{
+}@media (max-width:768px) {hr{
+}}@media (max-width:447px) {hr{
+}}.Stripe1 hr, html.mobile .Stripe1 hr{
+}html.mobile .Stripe1 hr{
+}@media (max-width:768px) {.Stripe1 hr{
+}}@media (max-width:447px) {.Stripe1 hr{
+}}.Stripe2 hr, html.mobile .Stripe2 hr{
+}html.mobile .Stripe2 hr{
+}@media (max-width:768px) {.Stripe2 hr{
+}}@media (max-width:447px) {.Stripe2 hr{
+}}.Stripe3 hr, html.mobile .Stripe3 hr{
+}html.mobile .Stripe3 hr{
+}@media (max-width:768px) {.Stripe3 hr{
+}}@media (max-width:447px) {.Stripe3 hr{
+}}#PageWrapper .WhatsNew, html.mobile #PageWrapper .WhatsNew{
+}html.mobile #PageWrapper .WhatsNew{
+}@media (max-width:768px) {#PageWrapper .WhatsNew{
+}}@media (max-width:447px) {#PageWrapper .WhatsNew{
+}}#PageWrapper .Stripe1 .WhatsNew, html.mobile #PageWrapper .Stripe1 .WhatsNew{
+}html.mobile #PageWrapper .Stripe1 .WhatsNew{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .WhatsNew{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .WhatsNew{
+}}#PageWrapper .Stripe2 .WhatsNew, html.mobile #PageWrapper .Stripe2 .WhatsNew{
+}html.mobile #PageWrapper .Stripe2 .WhatsNew{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .WhatsNew{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .WhatsNew{
+}}#PageWrapper .Stripe3 .WhatsNew, html.mobile #PageWrapper .Stripe3 .WhatsNew{
+}html.mobile #PageWrapper .Stripe3 .WhatsNew{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .WhatsNew{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .WhatsNew{
+}}#PageWrapper .WhatsNew h2, html.mobile #PageWrapper .WhatsNew h2{
+}html.mobile #PageWrapper .WhatsNew h2{
+}@media (max-width:768px) {#PageWrapper .WhatsNew h2{
+}}@media (max-width:447px) {#PageWrapper .WhatsNew h2{
+}}#PageWrapper .Stripe1 .WhatsNew h2, html.mobile #PageWrapper .Stripe1 .WhatsNew h2{
+}html.mobile #PageWrapper .Stripe1 .WhatsNew h2{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .WhatsNew h2{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .WhatsNew h2{
+}}#PageWrapper .Stripe2 .WhatsNew h2, html.mobile #PageWrapper .Stripe2 .WhatsNew h2{
+}html.mobile #PageWrapper .Stripe2 .WhatsNew h2{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .WhatsNew h2{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .WhatsNew h2{
+}}#PageWrapper .Stripe3 .WhatsNew h2, html.mobile #PageWrapper .Stripe3 .WhatsNew h2{
+}html.mobile #PageWrapper .Stripe3 .WhatsNew h2{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .WhatsNew h2{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .WhatsNew h2{
+}}#PageWrapper .WhatsNew .WhatsNew-time, html.mobile #PageWrapper .WhatsNew .WhatsNew-time{
+}html.mobile #PageWrapper .WhatsNew .WhatsNew-time{
+}@media (max-width:768px) {#PageWrapper .WhatsNew .WhatsNew-time{
+}}@media (max-width:447px) {#PageWrapper .WhatsNew .WhatsNew-time{
+}}#PageWrapper .Stripe1 .WhatsNew .WhatsNew-time, html.mobile #PageWrapper .Stripe1 .WhatsNew .WhatsNew-time{
+}html.mobile #PageWrapper .Stripe1 .WhatsNew .WhatsNew-time{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .WhatsNew .WhatsNew-time{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .WhatsNew .WhatsNew-time{
+}}#PageWrapper .Stripe2 .WhatsNew .WhatsNew-time, html.mobile #PageWrapper .Stripe2 .WhatsNew .WhatsNew-time{
+}html.mobile #PageWrapper .Stripe2 .WhatsNew .WhatsNew-time{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .WhatsNew .WhatsNew-time{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .WhatsNew .WhatsNew-time{
+}}#PageWrapper .Stripe3 .WhatsNew .WhatsNew-time, html.mobile #PageWrapper .Stripe3 .WhatsNew .WhatsNew-time{
+}html.mobile #PageWrapper .Stripe3 .WhatsNew .WhatsNew-time{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .WhatsNew .WhatsNew-time{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .WhatsNew .WhatsNew-time{
+}}#PageWrapper .WhatsNew .WhatsNew-content, html.mobile #PageWrapper .WhatsNew .WhatsNew-content{
+}html.mobile #PageWrapper .WhatsNew .WhatsNew-content{
+}@media (max-width:768px) {#PageWrapper .WhatsNew .WhatsNew-content{
+}}@media (max-width:447px) {#PageWrapper .WhatsNew .WhatsNew-content{
+}}#PageWrapper .Stripe1 .WhatsNew .WhatsNew-content, html.mobile #PageWrapper .Stripe1 .WhatsNew .WhatsNew-content{
+}html.mobile #PageWrapper .Stripe1 .WhatsNew .WhatsNew-content{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .WhatsNew .WhatsNew-content{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .WhatsNew .WhatsNew-content{
+}}#PageWrapper .Stripe2 .WhatsNew .WhatsNew-content, html.mobile #PageWrapper .Stripe2 .WhatsNew .WhatsNew-content{
+}html.mobile #PageWrapper .Stripe2 .WhatsNew .WhatsNew-content{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .WhatsNew .WhatsNew-content{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .WhatsNew .WhatsNew-content{
+}}#PageWrapper .Stripe3 .WhatsNew .WhatsNew-content, html.mobile #PageWrapper .Stripe3 .WhatsNew .WhatsNew-content{
+}html.mobile #PageWrapper .Stripe3 .WhatsNew .WhatsNew-content{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .WhatsNew .WhatsNew-content{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .WhatsNew .WhatsNew-content{
+}}#PageWrapper .WhatsNew h3 a, html.mobile #PageWrapper .WhatsNew h3 a{
+}html.mobile #PageWrapper .WhatsNew h3 a{
+}@media (max-width:768px) {#PageWrapper .WhatsNew h3 a{
+}}@media (max-width:447px) {#PageWrapper .WhatsNew h3 a{
+}}#PageWrapper .Stripe1 .WhatsNew h3 a:link, html.mobile #PageWrapper .Stripe1 .WhatsNew h3 a:link{
+}html.mobile #PageWrapper .Stripe1 .WhatsNew h3 a:link{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .WhatsNew h3 a:link{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .WhatsNew h3 a:link{
+}}#PageWrapper .Stripe2 .WhatsNew h3 a:link, html.mobile #PageWrapper .Stripe2 .WhatsNew h3 a:link{
+}html.mobile #PageWrapper .Stripe2 .WhatsNew h3 a:link{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .WhatsNew h3 a:link{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .WhatsNew h3 a:link{
+}}#PageWrapper .Stripe3 .WhatsNew h3 a:link, html.mobile #PageWrapper .Stripe3 .WhatsNew h3 a:link{
+}html.mobile #PageWrapper .Stripe3 .WhatsNew h3 a:link{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .WhatsNew h3 a:link{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .WhatsNew h3 a:link{
+}}#PageWrapper .responsive-row div[class*="responsive_col-"], html.mobile #PageWrapper .responsive-row div[class*="responsive_col-"]{
+}html.mobile #PageWrapper .responsive-row div[class*="responsive_col-"]{
+}@media (max-width:768px) {#PageWrapper .responsive-row div[class*="responsive_col-"]{
+}}@media (max-width:447px) {#PageWrapper .responsive-row div[class*="responsive_col-"]{
+}}#PageWrapper .Stripe1 .responsive-row div[class*="responsive_col-"], html.mobile #PageWrapper .Stripe1 .responsive-row div[class*="responsive_col-"]{
+}html.mobile #PageWrapper .Stripe1 .responsive-row div[class*="responsive_col-"]{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .responsive-row div[class*="responsive_col-"]{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .responsive-row div[class*="responsive_col-"]{
+}}#PageWrapper .Stripe2 .responsive-row div[class*="responsive_col-"], html.mobile #PageWrapper .Stripe2 .responsive-row div[class*="responsive_col-"]{
+}html.mobile #PageWrapper .Stripe2 .responsive-row div[class*="responsive_col-"]{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .responsive-row div[class*="responsive_col-"]{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .responsive-row div[class*="responsive_col-"]{
+}}#PageWrapper .Stripe3 .responsive-row div[class*="responsive_col-"], html.mobile #PageWrapper .Stripe3 .responsive-row div[class*="responsive_col-"]{
+}html.mobile #PageWrapper .Stripe3 .responsive-row div[class*="responsive_col-"]{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .responsive-row div[class*="responsive_col-"]{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .responsive-row div[class*="responsive_col-"]{
+}}#PageWrapper .WhatsNew h3 a:link, html.mobile #PageWrapper .WhatsNew h3 a:link{
+}html.mobile #PageWrapper .WhatsNew h3 a:link{
+}@media (max-width:768px) {#PageWrapper .WhatsNew h3 a:link{
+}}@media (max-width:447px) {#PageWrapper .WhatsNew h3 a:link{
+}}#PageWrapper .Stripe1 .WhatsNew h3 a:link, html.mobile #PageWrapper .Stripe1 .WhatsNew h3 a:link{
+}html.mobile #PageWrapper .Stripe1 .WhatsNew h3 a:link{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .WhatsNew h3 a:link{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .WhatsNew h3 a:link{
+}}#PageWrapper .Stripe2 .WhatsNew h3 a:link, html.mobile #PageWrapper .Stripe2 .WhatsNew h3 a:link{
+}html.mobile #PageWrapper .Stripe2 .WhatsNew h3 a:link{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .WhatsNew h3 a:link{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .WhatsNew h3 a:link{
+}}#PageWrapper .Stripe3 .WhatsNew h3 a:link, html.mobile #PageWrapper .Stripe3 .WhatsNew h3 a:link{
+}html.mobile #PageWrapper .Stripe3 .WhatsNew h3 a:link{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .WhatsNew h3 a:link{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .WhatsNew h3 a:link{
+}}#PageWrapper .WhatsNew h3 a:visited, html.mobile #PageWrapper .WhatsNew h3 a:visited{
+}html.mobile #PageWrapper .WhatsNew h3 a:visited{
+}@media (max-width:768px) {#PageWrapper .WhatsNew h3 a:visited{
+}}@media (max-width:447px) {#PageWrapper .WhatsNew h3 a:visited{
+}}#PageWrapper .Stripe1 .WhatsNew h3 a:visited, html.mobile #PageWrapper .Stripe1 .WhatsNew h3 a:visited{
+}html.mobile #PageWrapper .Stripe1 .WhatsNew h3 a:visited{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .WhatsNew h3 a:visited{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .WhatsNew h3 a:visited{
+}}#PageWrapper .Stripe2 .WhatsNew h3 a:visited, html.mobile #PageWrapper .Stripe2 .WhatsNew h3 a:visited{
+}html.mobile #PageWrapper .Stripe2 .WhatsNew h3 a:visited{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .WhatsNew h3 a:visited{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .WhatsNew h3 a:visited{
+}}#PageWrapper .Stripe3 .WhatsNew h3 a:visited, html.mobile #PageWrapper .Stripe3 .WhatsNew h3 a:visited{
+}html.mobile #PageWrapper .Stripe3 .WhatsNew h3 a:visited{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .WhatsNew h3 a:visited{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .WhatsNew h3 a:visited{
+}}#PageWrapper .WhatsNew h3 a:hover, html.mobile #PageWrapper .WhatsNew h3 a:hover{
+}html.mobile #PageWrapper .WhatsNew h3 a:hover{
+}@media (max-width:768px) {#PageWrapper .WhatsNew h3 a:hover{
+}}@media (max-width:447px) {#PageWrapper .WhatsNew h3 a:hover{
+}}#PageWrapper .Stripe1 .WhatsNew h3 a:hover, html.mobile #PageWrapper .Stripe1 .WhatsNew h3 a:hover{
+}html.mobile #PageWrapper .Stripe1 .WhatsNew h3 a:hover{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .WhatsNew h3 a:hover{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .WhatsNew h3 a:hover{
+}}#PageWrapper .Stripe2 .WhatsNew h3 a:hover, html.mobile #PageWrapper .Stripe2 .WhatsNew h3 a:hover{
+}html.mobile #PageWrapper .Stripe2 .WhatsNew h3 a:hover{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .WhatsNew h3 a:hover{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .WhatsNew h3 a:hover{
+}}#PageWrapper .Stripe3 .WhatsNew h3 a:hover, html.mobile #PageWrapper .Stripe3 .WhatsNew h3 a:hover{
+}html.mobile #PageWrapper .Stripe3 .WhatsNew h3 a:hover{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .WhatsNew h3 a:hover{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .WhatsNew h3 a:hover{
+}}#PageWrapper .WhatsNew ol li, html.mobile #PageWrapper .WhatsNew ol li{
+}html.mobile #PageWrapper .WhatsNew ol li{
+}@media (max-width:768px) {#PageWrapper .WhatsNew ol li{
+}}@media (max-width:447px) {#PageWrapper .WhatsNew ol li{
+}}#PageWrapper .Stripe1 .WhatsNew ol li, html.mobile #PageWrapper .Stripe1 .WhatsNew ol li{
+}html.mobile #PageWrapper .Stripe1 .WhatsNew ol li{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .WhatsNew ol li{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .WhatsNew ol li{
+}}#PageWrapper .Stripe2 .WhatsNew ol li, html.mobile #PageWrapper .Stripe2 .WhatsNew ol li{
+}html.mobile #PageWrapper .Stripe2 .WhatsNew ol li{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .WhatsNew ol li{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .WhatsNew ol li{
+}}#PageWrapper .Stripe3 .WhatsNew ol li, html.mobile #PageWrapper .Stripe3 .WhatsNew ol li{
+}html.mobile #PageWrapper .Stripe3 .WhatsNew ol li{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .WhatsNew ol li{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .WhatsNew ol li{
+}}#PageWrapper .WhatsNew h3, html.mobile #PageWrapper .WhatsNew h3{
+}html.mobile #PageWrapper .WhatsNew h3{
+}@media (max-width:768px) {#PageWrapper .WhatsNew h3{
+}}@media (max-width:447px) {#PageWrapper .WhatsNew h3{
+}}#PageWrapper .Stripe1 .WhatsNew h3, html.mobile #PageWrapper .Stripe1 .WhatsNew h3{
+}html.mobile #PageWrapper .Stripe1 .WhatsNew h3{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .WhatsNew h3{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .WhatsNew h3{
+}}#PageWrapper .Stripe2 .WhatsNew h3, html.mobile #PageWrapper .Stripe2 .WhatsNew h3{
+}html.mobile #PageWrapper .Stripe2 .WhatsNew h3{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .WhatsNew h3{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .WhatsNew h3{
+}}#PageWrapper .Stripe3 .WhatsNew h3, html.mobile #PageWrapper .Stripe3 .WhatsNew h3{
+}html.mobile #PageWrapper .Stripe3 .WhatsNew h3{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .WhatsNew h3{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .WhatsNew h3{
+}}#PageWrapper .WhatsNew .WhatsNew-more, html.mobile #PageWrapper .WhatsNew .WhatsNew-more{
+}html.mobile #PageWrapper .WhatsNew .WhatsNew-more{
+}@media (max-width:768px) {#PageWrapper .WhatsNew .WhatsNew-more{
+}}@media (max-width:447px) {#PageWrapper .WhatsNew .WhatsNew-more{
+}}#PageWrapper .Stripe1 .WhatsNew .WhatsNew-more, html.mobile #PageWrapper .Stripe1 .WhatsNew .WhatsNew-more{
+}html.mobile #PageWrapper .Stripe1 .WhatsNew .WhatsNew-more{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .WhatsNew .WhatsNew-more{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .WhatsNew .WhatsNew-more{
+}}#PageWrapper .Stripe2 .WhatsNew .WhatsNew-more, html.mobile #PageWrapper .Stripe2 .WhatsNew .WhatsNew-more{
+}html.mobile #PageWrapper .Stripe2 .WhatsNew .WhatsNew-more{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .WhatsNew .WhatsNew-more{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .WhatsNew .WhatsNew-more{
+}}#PageWrapper .Stripe3 .WhatsNew .WhatsNew-more, html.mobile #PageWrapper .Stripe3 .WhatsNew .WhatsNew-more{
+}html.mobile #PageWrapper .Stripe3 .WhatsNew .WhatsNew-more{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .WhatsNew .WhatsNew-more{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .WhatsNew .WhatsNew-more{
+}}#PageWrapper .WhatsNew .WhatsNew-more a, html.mobile #PageWrapper .WhatsNew .WhatsNew-more a{
+}html.mobile #PageWrapper .WhatsNew .WhatsNew-more a{
+}@media (max-width:768px) {#PageWrapper .WhatsNew .WhatsNew-more a{
+}}@media (max-width:447px) {#PageWrapper .WhatsNew .WhatsNew-more a{
+}}#PageWrapper .Stripe1 .WhatsNew .WhatsNew-more a:link, html.mobile #PageWrapper .Stripe1 .WhatsNew .WhatsNew-more a:link{
+}html.mobile #PageWrapper .Stripe1 .WhatsNew .WhatsNew-more a:link{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .WhatsNew .WhatsNew-more a:link{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .WhatsNew .WhatsNew-more a:link{
+}}#PageWrapper .Stripe2 .WhatsNew .WhatsNew-more a:link, html.mobile #PageWrapper .Stripe2 .WhatsNew .WhatsNew-more a:link{
+}html.mobile #PageWrapper .Stripe2 .WhatsNew .WhatsNew-more a:link{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .WhatsNew .WhatsNew-more a:link{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .WhatsNew .WhatsNew-more a:link{
+}}#PageWrapper .Stripe3 .WhatsNew .WhatsNew-more a:link, html.mobile #PageWrapper .Stripe3 .WhatsNew .WhatsNew-more a:link{
+}html.mobile #PageWrapper .Stripe3 .WhatsNew .WhatsNew-more a:link{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .WhatsNew .WhatsNew-more a:link{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .WhatsNew .WhatsNew-more a:link{
+}}#PageWrapper .WhatsNew .WhatsNew-more a:link, html.mobile #PageWrapper .WhatsNew .WhatsNew-more a:link{
+}html.mobile #PageWrapper .WhatsNew .WhatsNew-more a:link{
+}@media (max-width:768px) {#PageWrapper .WhatsNew .WhatsNew-more a:link{
+}}@media (max-width:447px) {#PageWrapper .WhatsNew .WhatsNew-more a:link{
+}}#PageWrapper .Stripe1 .WhatsNew .WhatsNew-more a:link, html.mobile #PageWrapper .Stripe1 .WhatsNew .WhatsNew-more a:link{
+}html.mobile #PageWrapper .Stripe1 .WhatsNew .WhatsNew-more a:link{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .WhatsNew .WhatsNew-more a:link{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .WhatsNew .WhatsNew-more a:link{
+}}#PageWrapper .Stripe2 .WhatsNew .WhatsNew-more a:link, html.mobile #PageWrapper .Stripe2 .WhatsNew .WhatsNew-more a:link{
+}html.mobile #PageWrapper .Stripe2 .WhatsNew .WhatsNew-more a:link{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .WhatsNew .WhatsNew-more a:link{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .WhatsNew .WhatsNew-more a:link{
+}}#PageWrapper .Stripe3 .WhatsNew .WhatsNew-more a:link, html.mobile #PageWrapper .Stripe3 .WhatsNew .WhatsNew-more a:link{
+}html.mobile #PageWrapper .Stripe3 .WhatsNew .WhatsNew-more a:link{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .WhatsNew .WhatsNew-more a:link{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .WhatsNew .WhatsNew-more a:link{
+}}#PageWrapper .WhatsNew .WhatsNew-more a:visited, html.mobile #PageWrapper .WhatsNew .WhatsNew-more a:visited{
+}html.mobile #PageWrapper .WhatsNew .WhatsNew-more a:visited{
+}@media (max-width:768px) {#PageWrapper .WhatsNew .WhatsNew-more a:visited{
+}}@media (max-width:447px) {#PageWrapper .WhatsNew .WhatsNew-more a:visited{
+}}#PageWrapper .Stripe1 .WhatsNew .WhatsNew-more a:visited, html.mobile #PageWrapper .Stripe1 .WhatsNew .WhatsNew-more a:visited{
+}html.mobile #PageWrapper .Stripe1 .WhatsNew .WhatsNew-more a:visited{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .WhatsNew .WhatsNew-more a:visited{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .WhatsNew .WhatsNew-more a:visited{
+}}#PageWrapper .Stripe2 .WhatsNew .WhatsNew-more a:visited, html.mobile #PageWrapper .Stripe2 .WhatsNew .WhatsNew-more a:visited{
+}html.mobile #PageWrapper .Stripe2 .WhatsNew .WhatsNew-more a:visited{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .WhatsNew .WhatsNew-more a:visited{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .WhatsNew .WhatsNew-more a:visited{
+}}#PageWrapper .Stripe3 .WhatsNew .WhatsNew-more a:visited, html.mobile #PageWrapper .Stripe3 .WhatsNew .WhatsNew-more a:visited{
+}html.mobile #PageWrapper .Stripe3 .WhatsNew .WhatsNew-more a:visited{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .WhatsNew .WhatsNew-more a:visited{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .WhatsNew .WhatsNew-more a:visited{
+}}#PageWrapper .WhatsNew .WhatsNew-more a:hover, html.mobile #PageWrapper .WhatsNew .WhatsNew-more a:hover{
+}html.mobile #PageWrapper .WhatsNew .WhatsNew-more a:hover{
+}@media (max-width:768px) {#PageWrapper .WhatsNew .WhatsNew-more a:hover{
+}}@media (max-width:447px) {#PageWrapper .WhatsNew .WhatsNew-more a:hover{
+}}#PageWrapper .Stripe1 .WhatsNew .WhatsNew-more a:hover, html.mobile #PageWrapper .Stripe1 .WhatsNew .WhatsNew-more a:hover{
+}html.mobile #PageWrapper .Stripe1 .WhatsNew .WhatsNew-more a:hover{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .WhatsNew .WhatsNew-more a:hover{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .WhatsNew .WhatsNew-more a:hover{
+}}#PageWrapper .Stripe2 .WhatsNew .WhatsNew-more a:hover, html.mobile #PageWrapper .Stripe2 .WhatsNew .WhatsNew-more a:hover{
+}html.mobile #PageWrapper .Stripe2 .WhatsNew .WhatsNew-more a:hover{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .WhatsNew .WhatsNew-more a:hover{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .WhatsNew .WhatsNew-more a:hover{
+}}#PageWrapper .Stripe3 .WhatsNew .WhatsNew-more a:hover, html.mobile #PageWrapper .Stripe3 .WhatsNew .WhatsNew-more a:hover{
+}html.mobile #PageWrapper .Stripe3 .WhatsNew .WhatsNew-more a:hover{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .WhatsNew .WhatsNew-more a:hover{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .WhatsNew .WhatsNew-more a:hover{
+}}#PageWrapper .WhatsNew h2 a, html.mobile #PageWrapper .WhatsNew h2 a{
+}html.mobile #PageWrapper .WhatsNew h2 a{
+}@media (max-width:768px) {#PageWrapper .WhatsNew h2 a{
+}}@media (max-width:447px) {#PageWrapper .WhatsNew h2 a{
+}}#PageWrapper .Stripe1 .WhatsNew h2 a:link, html.mobile #PageWrapper .Stripe1 .WhatsNew h2 a:link{
+}html.mobile #PageWrapper .Stripe1 .WhatsNew h2 a:link{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .WhatsNew h2 a:link{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .WhatsNew h2 a:link{
+}}#PageWrapper .Stripe2 .WhatsNew h2 a:link, html.mobile #PageWrapper .Stripe2 .WhatsNew h2 a:link{
+}html.mobile #PageWrapper .Stripe2 .WhatsNew h2 a:link{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .WhatsNew h2 a:link{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .WhatsNew h2 a:link{
+}}#PageWrapper .Stripe3 .WhatsNew h2 a:link, html.mobile #PageWrapper .Stripe3 .WhatsNew h2 a:link{
+}html.mobile #PageWrapper .Stripe3 .WhatsNew h2 a:link{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .WhatsNew h2 a:link{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .WhatsNew h2 a:link{
+}}#PageWrapper .WhatsNew h2 a:link, html.mobile #PageWrapper .WhatsNew h2 a:link{
+}html.mobile #PageWrapper .WhatsNew h2 a:link{
+}@media (max-width:768px) {#PageWrapper .WhatsNew h2 a:link{
+}}@media (max-width:447px) {#PageWrapper .WhatsNew h2 a:link{
+}}#PageWrapper .Stripe1 .WhatsNew h2 a:link, html.mobile #PageWrapper .Stripe1 .WhatsNew h2 a:link{
+}html.mobile #PageWrapper .Stripe1 .WhatsNew h2 a:link{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .WhatsNew h2 a:link{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .WhatsNew h2 a:link{
+}}#PageWrapper .Stripe2 .WhatsNew h2 a:link, html.mobile #PageWrapper .Stripe2 .WhatsNew h2 a:link{
+}html.mobile #PageWrapper .Stripe2 .WhatsNew h2 a:link{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .WhatsNew h2 a:link{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .WhatsNew h2 a:link{
+}}#PageWrapper .Stripe3 .WhatsNew h2 a:link, html.mobile #PageWrapper .Stripe3 .WhatsNew h2 a:link{
+}html.mobile #PageWrapper .Stripe3 .WhatsNew h2 a:link{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .WhatsNew h2 a:link{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .WhatsNew h2 a:link{
+}}#PageWrapper .WhatsNew h2 a:visited, html.mobile #PageWrapper .WhatsNew h2 a:visited{
+}html.mobile #PageWrapper .WhatsNew h2 a:visited{
+}@media (max-width:768px) {#PageWrapper .WhatsNew h2 a:visited{
+}}@media (max-width:447px) {#PageWrapper .WhatsNew h2 a:visited{
+}}#PageWrapper .Stripe1 .WhatsNew h2 a:visited, html.mobile #PageWrapper .Stripe1 .WhatsNew h2 a:visited{
+}html.mobile #PageWrapper .Stripe1 .WhatsNew h2 a:visited{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .WhatsNew h2 a:visited{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .WhatsNew h2 a:visited{
+}}#PageWrapper .Stripe2 .WhatsNew h2 a:visited, html.mobile #PageWrapper .Stripe2 .WhatsNew h2 a:visited{
+}html.mobile #PageWrapper .Stripe2 .WhatsNew h2 a:visited{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .WhatsNew h2 a:visited{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .WhatsNew h2 a:visited{
+}}#PageWrapper .Stripe3 .WhatsNew h2 a:visited, html.mobile #PageWrapper .Stripe3 .WhatsNew h2 a:visited{
+}html.mobile #PageWrapper .Stripe3 .WhatsNew h2 a:visited{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .WhatsNew h2 a:visited{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .WhatsNew h2 a:visited{
+}}#PageWrapper .WhatsNew h2 a:hover, html.mobile #PageWrapper .WhatsNew h2 a:hover{
+}html.mobile #PageWrapper .WhatsNew h2 a:hover{
+}@media (max-width:768px) {#PageWrapper .WhatsNew h2 a:hover{
+}}@media (max-width:447px) {#PageWrapper .WhatsNew h2 a:hover{
+}}#PageWrapper .Stripe1 .WhatsNew h2 a:hover, html.mobile #PageWrapper .Stripe1 .WhatsNew h2 a:hover{
+}html.mobile #PageWrapper .Stripe1 .WhatsNew h2 a:hover{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .WhatsNew h2 a:hover{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .WhatsNew h2 a:hover{
+}}#PageWrapper .Stripe2 .WhatsNew h2 a:hover, html.mobile #PageWrapper .Stripe2 .WhatsNew h2 a:hover{
+}html.mobile #PageWrapper .Stripe2 .WhatsNew h2 a:hover{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .WhatsNew h2 a:hover{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .WhatsNew h2 a:hover{
+}}#PageWrapper .Stripe3 .WhatsNew h2 a:hover, html.mobile #PageWrapper .Stripe3 .WhatsNew h2 a:hover{
+}html.mobile #PageWrapper .Stripe3 .WhatsNew h2 a:hover{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .WhatsNew h2 a:hover{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .WhatsNew h2 a:hover{
+}}#PageWrapper #HeaderWrapper, html.mobile #PageWrapper #HeaderWrapper{
+}html.mobile #PageWrapper #HeaderWrapper{
+}@media (max-width:768px) {#PageWrapper #HeaderWrapper{
+}}@media (max-width:447px) {#PageWrapper #HeaderWrapper{
+}}#PageWrapper #FooterWrapper, html.mobile #PageWrapper #FooterWrapper{
+}html.mobile #PageWrapper #FooterWrapper{
+}@media (max-width:768px) {#PageWrapper #FooterWrapper{
+}}@media (max-width:447px) {#PageWrapper #FooterWrapper{
+}}#PageWrapper .Caption, html.mobile #PageWrapper .Caption{
+}html.mobile #PageWrapper .Caption{
+}@media (max-width:768px) {#PageWrapper .Caption{
+}}@media (max-width:447px) {#PageWrapper .Caption{
+}}#PageWrapper .ImageBlock a:link span, html.mobile #PageWrapper .ImageBlock a:link span{
+}html.mobile #PageWrapper .ImageBlock a:link span{
+}@media (max-width:768px) {#PageWrapper .ImageBlock a:link span{
+}}@media (max-width:447px) {#PageWrapper .ImageBlock a:link span{
+}}#PageWrapper .Stripe1 .ImageBlock a:link span, html.mobile #PageWrapper .Stripe1 .ImageBlock a:link span{
+}html.mobile #PageWrapper .Stripe1 .ImageBlock a:link span{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .ImageBlock a:link span{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .ImageBlock a:link span{
+}}#PageWrapper .Stripe2 .ImageBlock a:link span, html.mobile #PageWrapper .Stripe2 .ImageBlock a:link span{
+}html.mobile #PageWrapper .Stripe2 .ImageBlock a:link span{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .ImageBlock a:link span{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .ImageBlock a:link span{
+}}#PageWrapper .Stripe3 .ImageBlock a:link span, html.mobile #PageWrapper .Stripe3 .ImageBlock a:link span{
+}html.mobile #PageWrapper .Stripe3 .ImageBlock a:link span{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .ImageBlock a:link span{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .ImageBlock a:link span{
+}}#PageWrapper .ImageBlock a:visited span, html.mobile #PageWrapper .ImageBlock a:visited span{
+}html.mobile #PageWrapper .ImageBlock a:visited span{
+}@media (max-width:768px) {#PageWrapper .ImageBlock a:visited span{
+}}@media (max-width:447px) {#PageWrapper .ImageBlock a:visited span{
+}}#PageWrapper .Stripe1 .ImageBlock a:visited span, html.mobile #PageWrapper .Stripe1 .ImageBlock a:visited span{
+}html.mobile #PageWrapper .Stripe1 .ImageBlock a:visited span{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .ImageBlock a:visited span{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .ImageBlock a:visited span{
+}}#PageWrapper .Stripe2 .ImageBlock a:visited span, html.mobile #PageWrapper .Stripe2 .ImageBlock a:visited span{
+}html.mobile #PageWrapper .Stripe2 .ImageBlock a:visited span{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .ImageBlock a:visited span{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .ImageBlock a:visited span{
+}}#PageWrapper .Stripe3 .ImageBlock a:visited span, html.mobile #PageWrapper .Stripe3 .ImageBlock a:visited span{
+}html.mobile #PageWrapper .Stripe3 .ImageBlock a:visited span{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .ImageBlock a:visited span{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .ImageBlock a:visited span{
+}}#PageWrapper .ImageBlock a:hover span, html.mobile #PageWrapper .ImageBlock a:hover span{
+}html.mobile #PageWrapper .ImageBlock a:hover span{
+}@media (max-width:768px) {#PageWrapper .ImageBlock a:hover span{
+}}@media (max-width:447px) {#PageWrapper .ImageBlock a:hover span{
+}}#PageWrapper .Stripe1 .ImageBlock a:hover span, html.mobile #PageWrapper .Stripe1 .ImageBlock a:hover span{
+}html.mobile #PageWrapper .Stripe1 .ImageBlock a:hover span{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .ImageBlock a:hover span{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .ImageBlock a:hover span{
+}}#PageWrapper .Stripe2 .ImageBlock a:hover span, html.mobile #PageWrapper .Stripe2 .ImageBlock a:hover span{
+}html.mobile #PageWrapper .Stripe2 .ImageBlock a:hover span{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .ImageBlock a:hover span{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .ImageBlock a:hover span{
+}}#PageWrapper .Stripe3 .ImageBlock a:hover span, html.mobile #PageWrapper .Stripe3 .ImageBlock a:hover span{
+}html.mobile #PageWrapper .Stripe3 .ImageBlock a:hover span{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .ImageBlock a:hover span{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .ImageBlock a:hover span{
+}}#PageWrapper #Header .WebsiteName, html.mobile #PageWrapper #Header .WebsiteName{
+}html.mobile #PageWrapper #Header .WebsiteName{
+}@media (max-width:768px) {#PageWrapper #Header .WebsiteName{
+}}@media (max-width:447px) {#PageWrapper #Header .WebsiteName{
+}}#PageWrapper #Header .Tagline, html.mobile #PageWrapper #Header .Tagline{
+}html.mobile #PageWrapper #Header .Tagline{
+}@media (max-width:768px) {#PageWrapper #Header .Tagline{
+}}@media (max-width:447px) {#PageWrapper #Header .Tagline{
+}}#PageWrapper #Header .WebsiteName a, html.mobile #PageWrapper #Header .WebsiteName a{
+}html.mobile #PageWrapper #Header .WebsiteName a{
+}@media (max-width:768px) {#PageWrapper #Header .WebsiteName a{
+}}@media (max-width:447px) {#PageWrapper #Header .WebsiteName a{
+}}#PageWrapper #Header .WebsiteName a:link, html.mobile #PageWrapper #Header .WebsiteName a:link{
+}html.mobile #PageWrapper #Header .WebsiteName a:link{
+}@media (max-width:768px) {#PageWrapper #Header .WebsiteName a:link{
+}}@media (max-width:447px) {#PageWrapper #Header .WebsiteName a:link{
+}}#PageWrapper #Header .WebsiteName a:visited, html.mobile #PageWrapper #Header .WebsiteName a:visited{
+}html.mobile #PageWrapper #Header .WebsiteName a:visited{
+}@media (max-width:768px) {#PageWrapper #Header .WebsiteName a:visited{
+}}@media (max-width:447px) {#PageWrapper #Header .WebsiteName a:visited{
+}}#PageWrapper #Header .WebsiteName a:hover, html.mobile #PageWrapper #Header .WebsiteName a:hover{
+}html.mobile #PageWrapper #Header .WebsiteName a:hover{
+}@media (max-width:768px) {#PageWrapper #Header .WebsiteName a:hover{
+}}@media (max-width:447px) {#PageWrapper #Header .WebsiteName a:hover{
+}}#PageWrapper .Ezine2, #PageWrapper .Ezine, html.mobile #PageWrapper .Ezine2, #PageWrapper .Ezine{
+}html.mobile #PageWrapper .Ezine2, #PageWrapper .Ezine{
+}@media (max-width:768px) {#PageWrapper .Ezine2, #PageWrapper .Ezine{
+}}@media (max-width:447px) {#PageWrapper .Ezine2, #PageWrapper .Ezine{
+}}#PageWrapper .Ezine2 .EzineRow label, html.mobile #PageWrapper .Ezine2 .EzineRow label{
+}html.mobile #PageWrapper .Ezine2 .EzineRow label{
+}@media (max-width:768px) {#PageWrapper .Ezine2 .EzineRow label{
+}}@media (max-width:447px) {#PageWrapper .Ezine2 .EzineRow label{
+}}#PageWrapper .Stripe1 .Ezine2 .EzineRow label, html.mobile #PageWrapper .Stripe1 .Ezine2 .EzineRow label{
+}html.mobile #PageWrapper .Stripe1 .Ezine2 .EzineRow label{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .Ezine2 .EzineRow label{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .Ezine2 .EzineRow label{
+}}#PageWrapper .Stripe2 .Ezine2 .EzineRow label, html.mobile #PageWrapper .Stripe2 .Ezine2 .EzineRow label{
+}html.mobile #PageWrapper .Stripe2 .Ezine2 .EzineRow label{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .Ezine2 .EzineRow label{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .Ezine2 .EzineRow label{
+}}#PageWrapper .Stripe3 .Ezine2 .EzineRow label, html.mobile #PageWrapper .Stripe3 .Ezine2 .EzineRow label{
+}html.mobile #PageWrapper .Stripe3 .Ezine2 .EzineRow label{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .Ezine2 .EzineRow label{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .Ezine2 .EzineRow label{
+}}#PageWrapper .Ezine2 .EzineRow input, html.mobile #PageWrapper .Ezine2 .EzineRow input{
+}html.mobile #PageWrapper .Ezine2 .EzineRow input{
+}@media (max-width:768px) {#PageWrapper .Ezine2 .EzineRow input{
+}}@media (max-width:447px) {#PageWrapper .Ezine2 .EzineRow input{
+}}#PageWrapper .Stripe1 .Ezine2 .EzineRow input, html.mobile #PageWrapper .Stripe1 .Ezine2 .EzineRow input{
+}html.mobile #PageWrapper .Stripe1 .Ezine2 .EzineRow input{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .Ezine2 .EzineRow input{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .Ezine2 .EzineRow input{
+}}#PageWrapper .Stripe2 .Ezine2 .EzineRow input, html.mobile #PageWrapper .Stripe2 .Ezine2 .EzineRow input{
+}html.mobile #PageWrapper .Stripe2 .Ezine2 .EzineRow input{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .Ezine2 .EzineRow input{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .Ezine2 .EzineRow input{
+}}#PageWrapper .Stripe3 .Ezine2 .EzineRow input, html.mobile #PageWrapper .Stripe3 .Ezine2 .EzineRow input{
+}html.mobile #PageWrapper .Stripe3 .Ezine2 .EzineRow input{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .Ezine2 .EzineRow input{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .Ezine2 .EzineRow input{
+}}#PageWrapper .Ezine2 .EzineButton, html.mobile #PageWrapper .Ezine2 .EzineButton{
+}html.mobile #PageWrapper .Ezine2 .EzineButton{
+}@media (max-width:768px) {#PageWrapper .Ezine2 .EzineButton{
+}}@media (max-width:447px) {#PageWrapper .Ezine2 .EzineButton{
+}}#PageWrapper .Stripe1 .Ezine2 .EzineButton, html.mobile #PageWrapper .Stripe1 .Ezine2 .EzineButton{
+}html.mobile #PageWrapper .Stripe1 .Ezine2 .EzineButton{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .Ezine2 .EzineButton{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .Ezine2 .EzineButton{
+}}#PageWrapper .Stripe2 .Ezine2 .EzineButton, html.mobile #PageWrapper .Stripe2 .Ezine2 .EzineButton{
+}html.mobile #PageWrapper .Stripe2 .Ezine2 .EzineButton{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .Ezine2 .EzineButton{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .Ezine2 .EzineButton{
+}}#PageWrapper .Stripe3 .Ezine2 .EzineButton, html.mobile #PageWrapper .Stripe3 .Ezine2 .EzineButton{
+}html.mobile #PageWrapper .Stripe3 .Ezine2 .EzineButton{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .Ezine2 .EzineButton{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .Ezine2 .EzineButton{
+}}#PageWrapper .Ezine2 a, html.mobile #PageWrapper .Ezine2 a{
+}html.mobile #PageWrapper .Ezine2 a{
+}@media (max-width:768px) {#PageWrapper .Ezine2 a{
+}}@media (max-width:447px) {#PageWrapper .Ezine2 a{
+}}#PageWrapper .Ezine2 a:link, html.mobile #PageWrapper .Ezine2 a:link{
+}html.mobile #PageWrapper .Ezine2 a:link{
+}@media (max-width:768px) {#PageWrapper .Ezine2 a:link{
+}}@media (max-width:447px) {#PageWrapper .Ezine2 a:link{
+}}#PageWrapper .Stripe1 .Ezine2 a:link, html.mobile #PageWrapper .Stripe1 .Ezine2 a:link{
+}html.mobile #PageWrapper .Stripe1 .Ezine2 a:link{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .Ezine2 a:link{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .Ezine2 a:link{
+}}#PageWrapper .Stripe2 .Ezine2 a:link, html.mobile #PageWrapper .Stripe2 .Ezine2 a:link{
+}html.mobile #PageWrapper .Stripe2 .Ezine2 a:link{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .Ezine2 a:link{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .Ezine2 a:link{
+}}#PageWrapper .Stripe3 .Ezine2 a:link, html.mobile #PageWrapper .Stripe3 .Ezine2 a:link{
+}html.mobile #PageWrapper .Stripe3 .Ezine2 a:link{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .Ezine2 a:link{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .Ezine2 a:link{
+}}#PageWrapper .Ezine2 a:visited, html.mobile #PageWrapper .Ezine2 a:visited{
+}html.mobile #PageWrapper .Ezine2 a:visited{
+}@media (max-width:768px) {#PageWrapper .Ezine2 a:visited{
+}}@media (max-width:447px) {#PageWrapper .Ezine2 a:visited{
+}}#PageWrapper .Stripe1 .Ezine2 a:visited, html.mobile #PageWrapper .Stripe1 .Ezine2 a:visited{
+}html.mobile #PageWrapper .Stripe1 .Ezine2 a:visited{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .Ezine2 a:visited{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .Ezine2 a:visited{
+}}#PageWrapper .Stripe2 .Ezine2 a:visited, html.mobile #PageWrapper .Stripe2 .Ezine2 a:visited{
+}html.mobile #PageWrapper .Stripe2 .Ezine2 a:visited{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .Ezine2 a:visited{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .Ezine2 a:visited{
+}}#PageWrapper .Stripe3 .Ezine2 a:visited, html.mobile #PageWrapper .Stripe3 .Ezine2 a:visited{
+}html.mobile #PageWrapper .Stripe3 .Ezine2 a:visited{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .Ezine2 a:visited{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .Ezine2 a:visited{
+}}#PageWrapper .Ezine2 a:hover, html.mobile #PageWrapper .Ezine2 a:hover{
+}html.mobile #PageWrapper .Ezine2 a:hover{
+}@media (max-width:768px) {#PageWrapper .Ezine2 a:hover{
+}}@media (max-width:447px) {#PageWrapper .Ezine2 a:hover{
+}}#PageWrapper .Stripe1 .Ezine2 a:hover, html.mobile #PageWrapper .Stripe1 .Ezine2 a:hover{
+}html.mobile #PageWrapper .Stripe1 .Ezine2 a:hover{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .Ezine2 a:hover{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .Ezine2 a:hover{
+}}#PageWrapper .Stripe2 .Ezine2 a:hover, html.mobile #PageWrapper .Stripe2 .Ezine2 a:hover{
+}html.mobile #PageWrapper .Stripe2 .Ezine2 a:hover{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .Ezine2 a:hover{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .Ezine2 a:hover{
+}}#PageWrapper .Stripe3 .Ezine2 a:hover, html.mobile #PageWrapper .Stripe3 .Ezine2 a:hover{
+}html.mobile #PageWrapper .Stripe3 .Ezine2 a:hover{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .Ezine2 a:hover{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .Ezine2 a:hover{
+}}
+#PageWrapper .Stripe1, html.mobile #PageWrapper .Stripe1{
+}html.mobile #PageWrapper .Stripe1{
+}@media (max-width:768px) {#PageWrapper .Stripe1{
+}}@media (max-width:447px) {#PageWrapper .Stripe1{
+}}#PageWrapper .Stripe1 .StripeLiner, html.mobile #PageWrapper .Stripe1 .StripeLiner{
+}html.mobile #PageWrapper .Stripe1 .StripeLiner{
+}@media (max-width:768px) {#PageWrapper .Stripe1 .StripeLiner{
+}}@media (max-width:447px) {#PageWrapper .Stripe1 .StripeLiner{
+}}#PageWrapper .Stripe2, html.mobile #PageWrapper .Stripe2{
+}html.mobile #PageWrapper .Stripe2{
+}@media (max-width:768px) {#PageWrapper .Stripe2{
+}}@media (max-width:447px) {#PageWrapper .Stripe2{
+}}#PageWrapper .Stripe2 .StripeLiner, html.mobile #PageWrapper .Stripe2 .StripeLiner{
+}html.mobile #PageWrapper .Stripe2 .StripeLiner{
+}@media (max-width:768px) {#PageWrapper .Stripe2 .StripeLiner{
+}}@media (max-width:447px) {#PageWrapper .Stripe2 .StripeLiner{
+}}#PageWrapper .Stripe3, html.mobile #PageWrapper .Stripe3{
+}html.mobile #PageWrapper .Stripe3{
+}@media (max-width:768px) {#PageWrapper .Stripe3{
+}}@media (max-width:447px) {#PageWrapper .Stripe3{
+}}#PageWrapper .Stripe3 .StripeLiner, html.mobile #PageWrapper .Stripe3 .StripeLiner{
+}html.mobile #PageWrapper .Stripe3 .StripeLiner{
+}@media (max-width:768px) {#PageWrapper .Stripe3 .StripeLiner{
+}}@media (max-width:447px) {#PageWrapper .Stripe3 .StripeLiner{
+}}body .eucookiebar, html.mobile body .eucookiebar{
+}html.mobile body .eucookiebar{
+}@media (max-width:768px) {body .eucookiebar{
+}}@media (max-width:447px) {body .eucookiebar{
+}}body .eucookiebar p, html.mobile body .eucookiebar p{
+}html.mobile body .eucookiebar p{
+}@media (max-width:768px) {body .eucookiebar p{
+}}@media (max-width:447px) {body .eucookiebar p{
+}}body .eucookiebar button, html.mobile body .eucookiebar button{
+}html.mobile body .eucookiebar button{
+}@media (max-width:768px) {body .eucookiebar button{
+}}@media (max-width:447px) {body .eucookiebar button{
+}}body .eucookiebar button:hover, html.mobile body .eucookiebar button:hover{
+}html.mobile body .eucookiebar button:hover{
+}@media (max-width:768px) {body .eucookiebar button:hover{
+}}@media (max-width:447px) {body .eucookiebar button:hover{
+}}body .eucookiebar a, html.mobile body .eucookiebar a{
+}html.mobile body .eucookiebar a{
+}@media (max-width:768px) {body .eucookiebar a{
+}}@media (max-width:447px) {body .eucookiebar a{
+}}body .eucookiebar a:link, html.mobile body .eucookiebar a:link{
+}html.mobile body .eucookiebar a:link{
+}@media (max-width:768px) {body .eucookiebar a:link{
+}}@media (max-width:447px) {body .eucookiebar a:link{
+}}body .eucookiebar a:visited, html.mobile body .eucookiebar a:visited{
+}html.mobile body .eucookiebar a:visited{
+}@media (max-width:768px) {body .eucookiebar a:visited{
+}}@media (max-width:447px) {body .eucookiebar a:visited{
+}}body .eucookiebar a:hover, html.mobile body .eucookiebar a:hover{
+}html.mobile body .eucookiebar a:hover{
+}@media (max-width:768px) {body .eucookiebar a:hover{
+}}@media (max-width:447px) {body .eucookiebar a:hover{
+}}/* footer css */
+/* font AvantGardeRegular definition */
+@font-face {
+    font-family: AvantGardeRegular;
+    font-display: fallback;
+    src: url('/css_webfonts/avantgarde-webfont.eot');
+    src: url('/css_webfonts/avantgarde-webfont.eot?iefix') format('eot'),
+         url('/css_webfonts/avantgarde-webfont.woff') format('woff'),
+         url('/css_webfonts/avantgarde-webfont.ttf') format('truetype'),
+         url('/css_webfonts/avantgarde-webfont.svg#webfontILwWK1qr') format('svg');
+    font-weight: normal;
+    font-style: normal;
+} 
+.page_footer_container {
+    width:100%; max-width: 500px;
+    margin: 12px auto;
+}
+
+.page_footer_content {
+    width: 100%;
+    text-align:center;background-color:transparent;}
+
+.page_footer_liner {
+    padding: 12px;	
+}
+
+.page_footer_divider_above {
+    margin: 0 auto;width:100%;
+        border: 0; 
+        border-top:1pxsolid#000;}
+
+.page_footer_divider_below {
+    margin: 0 auto;}
+
+.page_footer_text,
+.page_footer_text a {
+    font-family:AvantGardeRegular;font-size:12px;color:#000000;text-align:center;padding: 12px 0;
+}
+
+.powered_by_sbi_banner{
+    width:100%; 
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;	
+}/* footer css */
+/* Advanced CSS provided by user */#back-top {
+	position: fixed;
+	bottom: 80px;
+        padding-left: 170px; 
+	z-index: 10000;
+}
+
+#back-top a {
+	width: 54px;
+	display: block;
+	text-align: center;
+	font: 11px/100% Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #bbb;
+
+	/* transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+#back-top a:hover {
+	color: #000;
+}
+
+/* arrow icon (span tag) */
+#back-top span {           
+	width: 54px;
+	height: 54px;
+	display: block;
+	margin-bottom: 7px;
+	background: #ddd url(https://www.best-microcontroller-projects.com/image-files/up-arrow.png) no-repeat center center;
+
+	/* rounded corners */
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+
+	/* transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+#back-top a:hover span {
+	background-color: #777;
+}
+
+body{color:#000;background-color:#fff}.cpp1-assembler{}.cpp1-brackets{}.cpp1-character{}.cpp1-comment{color:green;font-style:italic}.cpp1-float{color:#000}.cpp1-hexadecimal{color:navy}.cpp1-identifier{color:#bb5e00}.cpp1-illegalchar{}.cpp1-number{color:#000}.cpp1-octal{color:#00f}.cpp1-preprocessor{}.cpp1-reservedword{color:#8000ff;font-weight:bold}.cpp1-space{color:teal}.cpp1-string{color:maroon}.cpp1-symbol{}
+
+.general1-comment { color: #008000; font-style: italic; }
+.general1-identifier { }
+.general1-key { color: #804000; font-weight: bold; }
+.general1-keywords2 { color: #804000; font-weight: bold; }
+.general1-keywords3 { color: #804000; font-weight: bold; }
+.general1-label { color: #FF0000; }
+.general1-number { color: #000080; }
+.general1-preprocessor { color: #008080; font-style: italic; }
+.general1-reservedword { color: #800000; font-weight: bold; }
+.general1-space { color: #008080; }
+.general1-string { color: #008000; }
+.general1-symbol { }
+
+#arduino_code{width:500px;height:500px;overflow:scroll;margin:5 auto;white-space:nowrap}
+#code_scroll_box{width:500px;height:500px;overflow:scroll;margin:5 auto;white-space:nowrap} 
+
+.arduino-code-sketch {
+   background:#EAEDED;
+}
+
+details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: .5em .5em 0;
+}
+
+summary {
+    font-weight: bold;
+    margin: -.5em -.5em 0;
+    padding: .5em;
+}
+
+.param_table {
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 10px 10px 5px grey;
+    margin-bottom:20px;
+}
+
+.param_table th, .param_table td{
+    text-align: left;
+    padding: 0px;
+}
+
+.param_table.param_table_padding th, .param_table.param_table_padding td{
+   padding:8px;
+}
+
+.param_table tr:nth-child(even){background-color: #f2f2f2}
+
+.param_table th{
+    background-color: #4CAF50;
+    color: white;
+}
+
+.note { 
+  background-color: lightgreen; 
+  border: 1px solid black; 
+  box-shadow: 10px 10px 5px grey; 
+  padding: 10px; 
+  margin-right: 20px; 
+  margin-left: 20px; 
+  margin-bottom: 20px; 
+  border-radius:8px;
+}
+
+.noteGreen { 
+  border: 1px solid black; 
+  box-shadow: 10px 10px 5px grey; 
+  padding: 10px; 
+  margin-right: 20px; 
+  margin-left: 20px; 
+  margin-bottom: 20px; 
+  background-color: lightgreen; 
+  border-radius:8px;
+}
+
+.noteBlue { 
+  background-color: lightblue; 
+  border: 1px solid black; 
+  box-shadow: 10px 10px 5px grey; 
+  padding: 10px; 
+  margin-right: 20px; 
+  margin-left: 20px; 
+  margin-bottom: 20px; 
+  border-radius:8px;
+}
+
+.noteYellow { 
+  background-color: khaki; 
+  border: 1px solid black; 
+  box-shadow: 10px 10px 5px grey; 
+  padding: 10px; 
+  margin-right: 20px; 
+  margin-left: 20px; 
+  margin-bottom: 20px; 
+  border-radius:8px;
+}
+
+.noteRed { 
+  background-color: rgb(255, 153, 153);
+  border: 1px solid black; 
+  box-shadow: 10px 10px 5px grey; 
+  padding: 10px; 
+  margin-right: 20px; 
+  margin-left: 20px; 
+  margin-bottom: 20px; 
+  border-radius:8px;
+}
+
+.index {
+   border: 1px solid blue; 
+   box-shadow: 5px 5px 2px grey; 
+   padding: 10px; 
+   margin: 20px;
+}
+
+.tsticky {  color:#000; }
+.tnav {color:green; } 
+
+.arduino_code {                                                                                                                                                      
+     width:100%;                                                                                                                                                       
+     height:450px;                                                                                                                                                     
+     overflow-y:scroll;                                                                                                                                                
+     resize:vertical;                                                                                                                                                  
+  }
+
+.code_scroll_box {                                                                                                                                                      
+     width:100%;                                                                                                                                                       
+     height:450px;                                                                                                                                                     
+     overflow-y:scroll;                                                                                                                                                
+     resize:vertical;                                                                                                                                                  
+  }
+
+/* lua - notepad++ syntax cols START */
+
+/* span {
+	font-family: 'Courier New';
+	font-size: 10pt;
+	color: #000000;
+}
+*/
+
+.sc0 {
+}
+.sc2 {
+	color: grey;
+}
+.sc4 {
+	color: #FFFF00;
+}
+.sc5 {
+	font-weight: bold;
+	color: #00FF80;
+}
+.sc6 {
+	color: #FF8040; /* Orange */
+}
+.sc7 {
+	color: #FF8040; /* Orange */
+}
+.sc10 {
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.sc11 {
+	color: #FFFFFF;
+}
+.sc13 {
+	font-weight: bold;
+	color: #00FF40;
+}
+.sc14 {
+	font-weight: bold;
+	color: #00FF80;
+}
+.sc15 {
+	font-weight: bold;
+	font-style: italic;
+	color: #00FF00;	
+}
+/* lua - notepad++ syntax cols END */
+
+/* Form aj stuff */
+
+.ajcontact{
+min-width:300px; /*so that form can't shrink down below the width of the form fields */
+max-width:400px; /* I don't want form to fill an entire column */
+margin:0 auto; /*This centers the form in the column */
+overflow-x:hidden; /*just in case form is narrower than form fields */
+border:1px solid #eee; /* the border around the form */
+padding-left:5px;
+padding-bottom:5px;
+border-radius:6px; /* rounding off the corners */
+background:#024264;/*solid color for old browsers, lines below are browser speficic */
+background:-webkit-linear-gradient(bottom,#0376B4,#024264);
+background:-ms-linear-gradient(bottom,#0376B4,#024264);
+background:-moz-linear-gradient(bottom,#0376B4,#024264);
+background:-o-linear-gradient(bottom,#0376B4,#024264);
+box-shadow:3px 3px 5px #666;}
+
+.ajcontact form table{
+width:96%!important; /*set the width of the table that holds the form */
+padding:0 2%;
+overflow-x:hidden;}
+
+.ajcontact label, .ajcontact .formbody{ /* this gives me small white text */
+width:90%; margin:10px auto;
+font-family:lato,san-serif;
+color:#fff;
+font-size:14px;
+font-weight:normal;}    
